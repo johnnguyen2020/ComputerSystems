@@ -50,9 +50,13 @@ ls | wc -l
 Figuring out a good workflow on Unix, Mac, (and even windows) is an important part of becoming a good programmer. My work environment (and the suggested one so I can help you during class), is to use the combination of the VIM text editor and tmux window manager to program your assignments in.
 
 ### Student and Teacher Dialouge
+
 *"But I love visual studio, sublime, XCode, Atom, etc."*
+
 *That's great, but you cannot use those in a remote environment easily--so I suggest learning another skill. By all means, use both or multiple tools to write the highest quality code.*
+
 *"Hehe, the professor will never know if I just use notepad. I'll just take a shortcut on this assignment"*
+
 *While that's true you can take a shortcut now, it will eventually catch up to you. I promise this is a good skill to learn! This first assignment is much more lightweight, take the time now to do things properly.*
 
 Here are some suggested resources to get started.
