@@ -22,7 +22,7 @@ We have previously learned the Linked List Data Structure. Now we will introduce
 
 A 'queue' data structure is analogous to waiting in line at a grocery store. The first person to the checkout counter is served, followed by the next person, and then the next until the line is empty. A queue is what is known as a 'first-in first-out' (FIFO) data structure. Thus queues have a strict policy about how information is stored and accessed.
 
-For this assignment, you are going to implement a specific implementation of a queue using an array. This data structure is also called a circular queue (specifically a ring buffer when the maximum storage size is fixed).
+For this assignment, you are going to implement a specific implementation of a queue using an array in the **myqueue.h** file. This data structure is also called a circular queue (specifically a ring buffer when the maximum storage size is fixed).
 
 Provided for you is a skeleton of the implementation queue_array.c that you will implement and test.
 
