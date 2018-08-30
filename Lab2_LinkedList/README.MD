@@ -1,5 +1,6 @@
 # Linked List
-"A first non-trivial data structure"
+
+> "A first non-trivial data structure"
 
 Data structures are a way for us to store information. Most programming languages come with support for an 'array' data structure for instance. As a reminder, an array is a data structure which stores homogenous datatypes in a contiguous piece of memory. That is a fancy way of saying:
 
