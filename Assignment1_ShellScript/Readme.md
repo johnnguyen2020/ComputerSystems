@@ -52,8 +52,8 @@ Figuring out a good workflow on Unix, Mac, (and even windows) is an important pa
 ### Student and Teacher Dialouge
 *"But I love visual studio, sublime, XCode, Atom, etc."*
 *That's great, but you cannot use those in a remote environment easily--so I suggest learning another skill. By all means, use both or multiple tools to write the highest quality code.*
-*"Hehe, the professor will never know if I just use notepad. I'll just take a shortcut on this assignment"
-*While that's true you can take a shortcut now, it will eventually catch up to you. I promise this is a good skill to learn! This first assignment is much more lightweight, take the time now to do things properly.
+*"Hehe, the professor will never know if I just use notepad. I'll just take a shortcut on this assignment"*
+*While that's true you can take a shortcut now, it will eventually catch up to you. I promise this is a good skill to learn! This first assignment is much more lightweight, take the time now to do things properly.*
 
 Here are some suggested resources to get started.
 * (VIM+TMUX Example) https://www.youtube.com/watch?v=YD9aFIvlQYs (16:31)
