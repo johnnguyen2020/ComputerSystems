@@ -122,11 +122,11 @@ Of course if you have a linux machine you may not need a virtual machine. What i
 ## Deliverable
 
 * Copy and Paste the output from the command-line interface of you running five different terminal commands above into a file called "output.txt" (no capitalization, exactly as named.)
-  * Make sure to 'commit' this file to the repo.
+  * Make sure to 'commit' this file to the repo in this directory.
 * Take a screenshot of your virtual machine running. Name it 'ubuntu.jpg'
-  * Make sure to 'commit' this file to the repo.
-* Create a file called 'main.c' in your respository containing one of the learn-c.org examples that you programmed using VIM.
-  * Make sure to 'commit' this file to the repo.
+  * Make sure to 'commit' this file to the repo in this directory.
+* Modify the file called 'main.c' in your respository containing one of the learn-c.org examples that you programmed using VIM.
+  * Make sure to 'commit' this file to the repo in this directory.
   
 ## Going Further
 
