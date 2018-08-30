@@ -60,7 +60,16 @@ You *may* also consider writing some unit tests to test your implementation (In 
 * Make sure your queue does not overwrite any data.
 * etc.
 
-## Part 2 - Why is a ring buffer/circular queue useful?
+## Part 2 - What is a file that ends in .h.
+
+A file that ends in .h is known as a header file. A header file typically is a file that contains an 'interface' for a set of functions to perform some task. The actual implementation (i.e. the loops, if-statements, arrays, and tools that do work) are found in a .c file. 
+
+For this assignment, our 'queue' library is quite small, so we will implement the entire functionality into a header file. There are some pros and cons to this approach. One particular 'pro' is it makes your code very easy to test. We will simply use our own 'main.c' file to test your implementation (that is why it is important you do not change the names of any functions). 
+
+* More information on header files
+	* https://gcc.gnu.org/onlinedocs/cpp/Header-Files.html
+
+## Part 3 - Why is a ring buffer/circular queue useful?
 
 Circular queues are used quite a bit in operating systems and high performance systems, especially when performance matters. Do a little outside research, and edit this section of the readme answering specifically: Why is a ring buffer useful and/or when should it be used?
 
@@ -93,6 +102,12 @@ Circular queues are used quite a bit in operating systems and high performance s
   * queue_peek - Returns the first value in the queue
   * queue_back - Returns the last value in the queue
   * queue_equals - Checks if two queues are equal
+  
+  
+* Information on pros/cons of our header only design
+	* https://softwareengineering.stackexchange.com/questions/305618/are-header-only-libraries-more-efficient
+* Some examples (Revisit this again in a few weeks)
+	* https://github.com/nothings/single_file_libs  
   
 # Feedback Loop
 
