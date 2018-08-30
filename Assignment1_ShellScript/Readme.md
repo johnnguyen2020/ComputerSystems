@@ -1,4 +1,4 @@
-# Due Date: July 13, 2018 at 5:00 PM.
+# Due Date: Sept 11, 2018 at 11:59 PM.
 
 (This means push your changes to the repository by 5pm--whatever you see on the web is what I grade)
 
@@ -17,9 +17,11 @@ TODO Please edit the following information in your assignment
 
 Getting familiar with the terminal is a fundamental skill to have. Many of you have various levels of experience using the terminal.
 
-For this assignment, you will be warming up by writing a 1-2 page tutorial on how to use the terminal to do something non-trivial on the command line by building a shell script (You can look at example 'sh' scripts for inspiration on what you can achieve). An example of a non-trivial script would be a few lines of code that sorts a particular column of data from a .csv file. You can use your imagination to continue further.
+For this assignment, you will be warming up by writing a 1-2 page tutorial on bash scripting. Your tutorial will be embededded in a shell script, explaining how to do something on the terminal that is non-trivial but that can be automated. You will run your script `myScript.sh` on command line as an executable shell script.  You can look at example 'sh' scripts for inspiration on what you can achieve on the web. 
 
-The tutorial can be purely text, and you should upload a file called 'tutorial.txt'. I *strongly* encourage you to use a tool like 'vim', 'emacs', or 'nano' to write your tutorial. I personally use the vim text editor.
+The tutorial will be done purely  in text and and within a file called 'myscript.sh'. You are required to type your tutorial using a terminal based text editor like 'vim', 'emacs', or 'nano' to write your tutorial (I personally use the vim text editor).
+
+An example of a non-trivial script would be a few lines of code that sorts a particular column of data from a .csv file. You can use your imagination to continue further.
 
 # Part 1 - myScript.sh
 
@@ -45,12 +47,15 @@ ls | wc -l
 
 (Note this part is ungraded--but you are required to do it!)
 
-Figuring out a good workflow on Unix, Mac, (and even windows) is an important part of becoming a good programmer. My work environment (and the suggested one so I can help you), is to use the combination of the VIM text editor and tmux window manager to program your assignments in.
+Figuring out a good workflow on Unix, Mac, (and even windows) is an important part of becoming a good programmer. My work environment (and the suggested one so I can help you during class), is to use the combination of the VIM text editor and tmux window manager to program your assignments in.
 
-*"But I love visual studio, sublime, XCode, etc."*
+### Student and Teacher Dialouge
+*"But I love visual studio, sublime, XCode, Atom, etc."*
 *That's great, but you cannot use those in a remote environment easily--so I suggest learning another skill. By all means, use both or multiple tools to write the highest quality code.*
+*"Hehe, the professor will never know if I just use notepad. I'll just take a shortcut on this assignment"
+*While that's true you can take a shortcut now, it will eventually catch up to you. I promise this is a good skill to learn! This first assignment is much more lightweight, take the time now to do things properly.
 
-Here are some suggested resources to get started (I also recommend you implement this assignment using VIM+tmux for practice).
+Here are some suggested resources to get started.
 * (VIM+TMUX Example) https://www.youtube.com/watch?v=YD9aFIvlQYs (16:31)
 * Type *man tmux* in a terminal.
 * Tmux tutorial - https://www.youtube.com/watch?v=BHhA_ZKjyxo (11:23)
