@@ -11,6 +11,9 @@ TODO Please edit the following information in your assignment
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
+# Logistics
+
+For this assignment (and every assignment/lab), you must login into the servers through `your_ccis_name@login.ccs.neu.edu` to complete and test your work. The reason is the examples I will provide below are compiled strictly for our machines architecture, and this is a consistent architecture where your submission will be graded.
 
 # Building Data Structures - Queue
 <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/450px-Data_Queue.svg.png" alt="Queue picture">
