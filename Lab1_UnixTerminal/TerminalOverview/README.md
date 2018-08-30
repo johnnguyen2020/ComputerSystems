@@ -17,14 +17,14 @@ In this lab, you are going to perform a few terminal commands to get familiar wi
 
 ## Part 1 - SSH
 
-**I don't care what operating system you use as long as you have a terminal**
+**I don't care what operating system you use locally as long as you have a terminal and internet access**
 
 * For Windows Users installing Putty is sufficient. (https://www.putty.org/)
   * You might prefer to also install the bash shell from the Windows Store as well. (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 * For Linux/Mac users, you already have a terminal available! Just search for 'terminal'.
 * We additionally will install a virtual machine which you may work from, and which has a terminal.
 * Once your terminal is open, 'ssh' into ccis with: `ssh ccis_user_name_here@login.ccs.neu.edu`
-  * If for some reason you do not have a ccis username, let me know. We'll have to e-mail operations.
+  * If for some reason you do not have a ccis username, let me know. you will have to e-mail systems.
 * After you have successfully ssh'd, you are now running programs on the ccis servers (not locally on your machine).
 * Now you may 'git clone' the mono repo to this location (Presumably you have done this if you are reading this text).
 
@@ -51,8 +51,10 @@ Some other nice things to know with the terminal
 * Pressing Ctrl+C sends a signal to the terminal to terminate a program if it gets stuck.
 * Pressing Ctrl+Z sends a signal to the terminal to suspend a program and give you back control.
   * You can play with these by typing in *sleep 10* (which puts the terminal to sleep) for 10 seconds, and see how you can terminate this program.
+* Practice getting help by typing `man ssh` into the terminal. (Press q to quit the manual pages).
 
-**A bit of precision** on calling each of these 'commands' is not really correct. Each of these is itself a program (typically implemented in C).
+### A bit of precision
+Calling each of these 'commands' (i.e. ls, sort, cat, etc.) is not really correct. Each of these is itself a program (typically implemented in C or some other language).
 
 As an example, here is the source code for 'ls': http://git.savannah.gnu.org/cgit/coreutils.git/tree/src/ls.c
 Each of these commands are part of the coreutils package in Unix. If you look through the source tree, you will additionally find many other programs (i.e. terminal commands you run in your shell) here: http://git.savannah.gnu.org/cgit/coreutils.git/tree/src/.
@@ -79,7 +81,7 @@ You can compile your program with: `clang main.c -o main` to see if it works.
 
 Here is a little tutorial on VIM as a resource: https://www.howtoforge.com/vim-basics (Note I use VIM, and have limited knowledge of other editors, but you are free to use what you like).
 
-## Part 4 - The Network is down!
+## Part 4 - The Network is down! How to work locally.
 
 Sometimes ssh is not available if the internet is not. Hmm, how will we then work on our CCIS machines which are in a linux environment? The solution is to install locally (i.e. your desktop machine) a virtual machine. A virtual machine emulates an entire operating system!
 
