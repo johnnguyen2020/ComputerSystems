@@ -19,10 +19,11 @@ In this lab, you are going to perform a few terminal commands to get familiar wi
 
 **I don't care what operating system you use as long as you have a terminal**
 
-* For Windows Users installing Putty is sufficient. You might prefer to also install the bash shell from the Windows Store as well.
+* For Windows Users installing Putty is sufficient. (https://www.putty.org/)
+  * You might prefer to also install the bash shell from the Windows Store as well. (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 * For Linux/Mac users, you already have a terminal available! Just search for 'terminal'.
 * We additionally will install a virtual machine which you may work from, and which has a terminal.
-* Once your terminal is open, 'ssh' into ccis with: *ssh ccis_user_name_here@login.ccs.neu.edu*
+* Once your terminal is open, 'ssh' into ccis with: `ssh ccis_user_name_here@login.ccs.neu.edu`
   * If for some reason you do not have a ccis username, let me know. We'll have to e-mail operations.
 * After you have successfully ssh'd, you are now running programs on the ccis servers (not locally on your machine).
 * Now you may 'git clone' the mono repo to this location (Presumably you have done this if you are reading this text).
