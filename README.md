@@ -6,16 +6,14 @@ Find your lab partner(s) here: https://docs.google.com/spreadsheets/d/1-PCJGv6b-
 
 # The Monorepo
 
-Welcome to Computer Systems!
-
-This is a graduate level course, and the expectations are graduate level work. That means we will get to do some real cool projects that are related to the real world!
+Welcome to Computer Systems! This repository will be how to retrieve homework assignments and in-class lab assignments.
 
 Okay, let's get started!
 
 ## Learning git
 If you are not familiar with git, you can quickly learn the basics of how it works in about 15 minutes.
 
-https://try.github.io/levels/1/challenges/1
+https://www.codecademy.com/learn/learn-git
 
 ## github and this course
 
