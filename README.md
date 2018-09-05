@@ -1,8 +1,9 @@
 # Your name here (TODO: Change this heading to your name)
-# Phonetic spelling of your name here (TODO: Change this heading to your name)
+# Phonetic spelling of your name here (TODO: Change this)
 
 # Partners Spreadsheet
-Find your lab partner(s) here: https://docs.google.com/spreadsheets/d/1ORbEDLNAFzAMT4FbUeMy1wUdxxUpqs7wNUR8s4OUByY/edit?usp=sharing
+(Lookup your lab partner(s) here) 
+https://docs.google.com/spreadsheets/d/1ORbEDLNAFzAMT4FbUeMy1wUdxxUpqs7wNUR8s4OUByY/edit?usp=sharing
 
 # The Monorepo
 
@@ -13,7 +14,8 @@ Okay, let's get started!
 ## Learning git
 If you are not familiar with git, you can quickly learn the basics of how it works in about 15 minutes.
 
-* https://www.codecademy.com/learn/learn-git
+* An interactive tutorial: 
+  * https://www.codecademy.com/learn/learn-git
 
 ## github and this course
 
