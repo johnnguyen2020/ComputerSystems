@@ -1,4 +1,4 @@
-# Your name here (TODO: Change this heading to your name)
+# John Nguyen
 # Phonetic spelling of your name here (TODO: Change this)
 
 # Partners Spreadsheet
