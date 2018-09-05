@@ -42,7 +42,7 @@ For all assignments, you must login into the servers through `your_ccis_name@log
 
 ## Monorepo
 
-A monorepo is known as a 'monolithic' repository. Comapnies like Google for instance have nearly all of their code from every single employee in one single repository. Some companies choose to have many separate repositories. Which strategy would you think is better? Take a moment to think about it, and you can read more on the 'why' (at least for Google) and other companies below: 
+A monorepo is known as a 'monolithic' repository. Companies like Google for instance have nearly all of their code from every single employee in one single repository. Some companies choose to have many separate repositories. Which strategy would you think is better? Take a moment to think about it, and you can read more on the 'why' (at least for Google) and other companies below: 
 
 * https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext
 * https://danluu.com/monorepo/
