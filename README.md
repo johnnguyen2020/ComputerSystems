@@ -1,6 +1,5 @@
 # John Nguyen
-# Phonetic spelling of your name here (TODO: Change this)
-
+# dʒan nujɛn
 # Partners Spreadsheet
 (Lookup your lab partner(s) here) 
 https://docs.google.com/spreadsheets/d/1ORbEDLNAFzAMT4FbUeMy1wUdxxUpqs7wNUR8s4OUByY/edit?usp=sharing
