@@ -1,1 +1,43 @@
 # Simply copy and paste the output from your terminal here!
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ ls
+Assignment1_ShellScript  Lab1_UnixTerminal  README.md
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ cd Lab1
+-bash: cd: Lab1: No such file or directory
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ cd Lab1_UnixTerminal/
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ ls
+TerminalOverview
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ cd TerminalOverview/
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
+ExternalResources  images  main.c  output.txt  README.md
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ cd ..
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ ls
+TerminalOverview
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ cd TerminalOverview/
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
+ExternalResources  images  main.c  output.txt  README.md
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ cd output.txt
+-bash: cd: output.txt: Not a directory
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ vi output.txt
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ cd ..
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ ls
+TerminalOverview
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ cd TerminalOverview/
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
+ExternalResources  images  main.c  output.txt  README.md
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ pwd
+/home/john/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ man ls
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ mkdir JohnTest
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
+ExternalResources  JohnTest  output.txt
+images             main.c    README.md
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ rmdir JohnTest
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ sort
+^C
+john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$
