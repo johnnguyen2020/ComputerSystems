@@ -1,43 +1,51 @@
 # Simply copy and paste the output from your terminal here!
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ git status
-On branch master
-Your branch is up-to-date with 'origin/master'.
 
-nothing to commit, working directory clean
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ ls
+john@DESKTOP-F1TIAP7:~$ ssh johnnguyen@login.ccs.neu.edu
+johnnguyen@login.ccs.neu.edu's password:
+Last login: Mon Sep 10 22:09:35 2018 from c-73-167-112-153.hsd1.ma.comcast.net
+=================================================================
+You have logged into login-students.ccs.neu.edu.
+=================================================================
+Please contact systems@ccs.neu.edu if you encounter any issues.
+=================================================================
+-bash-4.2$ git clone https://github.com/Fall18Systems/monorepo-johnnguyen2020.git
+Cloning into 'monorepo-johnnguyen2020'...
+Username for 'https://github.com': johnnguyen2020
+Password for 'https://johnnguyen2020@github.com':
+remote: Counting objects: 148, done.
+remote: Compressing objects: 100% (94/94), done.
+remote: Total 148 (delta 41), reused 140 (delta 36), pack-reused 0
+Receiving objects: 100% (148/148), 320.13 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (41/41), done.
+-bash-4.2$ ls
+Contacts     Documents  Links                    Music        My Videos  $RECYCLE.BIN   Videos              Visual Studio 2012
+Desktop      Downloads  monorepo-johnnguyen2020  My Music     Pictures   rhcdtdebugger  Visual Studio 2008  Visual Studio 2013
+desktop.ini  HW3B.rkt   #mredauto#1#             My Pictures  Public     Templates      Visual Studio 2010  workspace-rhcdtdebug
+-bash-4.2$ cd monorepo-johnnguyen2020/
+-bash-4.2$ ls
 Assignment1_ShellScript  Lab1_UnixTerminal  README.md
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ cd Lab1
--bash: cd: Lab1: No such file or directory
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020$ cd Lab1_UnixTerminal/
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ ls
+-bash-4.2$ cd Lab1_UnixTerminal/
+-bash-4.2$ ls
 TerminalOverview
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ cd TerminalOverview/
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
+-bash-4.2$ ls TerminalOverview/
 ExternalResources  images  main.c  output.txt  README.md
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ cd ..
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ ls
+-bash-4.2$ mkdir JohnTest
+-bash-4.2$ ls
+JohnTest  TerminalOverview
+-bash-4.2$ cd JohnTest/
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+JohnTest  TerminalOverview
+-bash-4.2$ cd ..
+-bash-4.2$ ls
+Assignment1_ShellScript  Lab1_UnixTerminal  README.md
+-bash-4.2$ cd Lab1_UnixTerminal/
+-bash-4.2$ rmdit JohnTest/
+-bash: rmdit: command not found
+-bash-4.2$ ls
+JohnTest  TerminalOverview
+-bash-4.2$ rmdir JohnTest/
+-bash-4.2$ ls
 TerminalOverview
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ cd TerminalOverview/
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
-ExternalResources  images  main.c  output.txt  README.md
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ cd output.txt
--bash: cd: output.txt: Not a directory
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ vi output.txt
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ cd ..
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ ls
-TerminalOverview
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal$ cd TerminalOverview/
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
-ExternalResources  images  main.c  output.txt  README.md
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ pwd
-/home/john/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ man ls
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ mkdir JohnTest
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ ls
-ExternalResources  JohnTest  output.txt
-images             main.c    README.md
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ rmdir JohnTest
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$ sort
-^C
-john@DESKTOP-F1TIAP7:~/monorepo-johnnguyen2020/Lab1_UnixTerminal/TerminalOverview$
+-bash-4.2$ man rmdir
+-bash-4.2$
