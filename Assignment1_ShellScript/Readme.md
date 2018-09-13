@@ -1,13 +1,12 @@
 ### TODO Please edit the following information in your assignment
 
-- Name(s):
-- How many hours did it take you to complete this lab?
-- Did you collaborate with any other students/TAs/Professors?
-- Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
-- (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
+- Name(s): John Nguyen
+- How many hours did it take you to complete this lab?: 8 hours
+- Did you collaborate with any other students/TAs/Professors?: No
+- External resources
+  - https://github.com/atarallo/TECMINT_MONITOR/blob/master/tecmint_monitor.sh
+  - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-11.html#ss11.5
+
 
 # Logistics
 
