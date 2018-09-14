@@ -6,6 +6,7 @@
   - https://github.com/atarallo/TECMINT_MONITOR/blob/master/tecmint_monitor.sh
   - http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-11.html#ss11.5
  -Can be shared?: yes
+ 
  -NOTE*: The linux.jpg file contains a screenshot of the virutal environement AND VIM+TMUX
 
 
