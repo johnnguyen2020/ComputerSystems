@@ -28,6 +28,26 @@ void unitTest1(){
 	free_queue(test1);
 }
 
+void unitTest2(){
+	queue_t* test2 = create_queue(7);
+	printf("Attempting to add %d\n",7);
+	queue_enqueue(test2,10);	
+	queue_enqueue(test2,20);	
+	queue_enqueue(test2,30);	
+	queue_enqueue(test2,40);	
+	queue_enqueue(test2,500);	
+	queue_enqueue(test2,60);	
+	queue_enqueue(test2,70);	
+	
+	printf("Is queue empty?: %d\n",queue_empty(test2));	
+	printf("Is queue full?: %d\n",queue_full(test2));	
+	printf("Queue Size: %d\n",queue_size(test2));
+	free_queue(test2);
+}
+
+
+
+
 
 // ====================================================
 // ================== Program Entry ===================
@@ -35,7 +55,7 @@ void unitTest1(){
 int main(){
 
 	// List of Unit Tests to test your data structure	
-	unitTest1();
+	unitTest2();
 
 	return 0;
 }
