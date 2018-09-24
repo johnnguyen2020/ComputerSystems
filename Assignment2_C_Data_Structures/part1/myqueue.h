@@ -12,7 +12,7 @@
 #ifndef MYQUEUE_H
 #define MYQUEUE_H
 #include <stdlib.h>
-
+#include <stdio.h> 
 // The main data structure for the queue
 struct queue{
 	unsigned int back;	    // The next free position in the queue
@@ -124,6 +124,19 @@ void free_queue(queue_t* q){
 	}
 	else{
 		free(q);
+	}
+}
+
+void print_list(queue_t* q){
+	if (q == NULL){
+	return;
+	}
+	else{
+	int i;
+	//int length = queue_size(q)%q->capacity;
+		for(i=q->front; i<queue_size(q); i++){
+			printf(" %d ", q->data[i%q->capacity]);
+		} 
 	}
 }
 

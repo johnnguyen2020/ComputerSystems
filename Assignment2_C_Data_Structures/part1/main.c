@@ -42,6 +42,7 @@ void unitTest2(){
 	printf("Is queue empty?: %d\n",queue_empty(test2));	
 	printf("Is queue full?: %d\n",queue_full(test2));	
 	printf("Queue Size: %d\n",queue_size(test2));
+	print_list(test2);
 	free_queue(test2);
 }
 
