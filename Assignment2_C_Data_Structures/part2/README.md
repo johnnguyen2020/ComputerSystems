@@ -58,7 +58,9 @@ We are going to talk about stacks quite a lot in this course, so it will be impo
 
 # TODO: Put your answer here
 
-*My answer is ...*
+A stack is a data type that has two main functions, to add an element to a collection and to also remove the most recently added element. This is like a stack of dishes which has the order of last in first out or LIFO. A stack is a linear data structure where the add and remove operations happen at the top of the stack, also known as the head of the stack. Stacks can be implemented through arrays or linked lists. Other functions commonly used when implementing stacks are the size of functions, print the stack, determine if full or empty and free the stack or delete the memory allocated to the stack. 
+	Stacks are most notable for being used in computer system architectures and more specifically, allocating and accessing memory. In the program stack, there are several segments dedicated for distinct parts like the stack for short lived data and the heap for long lived data. In the computer architecture the stack is represented by a block of memory cells where the bottom of the stack is fixed and the stack pointer is the address of the top of the stack. In CISC architectures, dedicated registers are used as the call stack stack pointer as opposed to RISC architectures where registers are used as stack pointers as needed. Some applications of stacks are parsing, backtracking, compile time memory management and many algorithms. Specifically in algorithms, since a stack is linear, the runtime complexity is O(n) for traversing and is O(1) for insertion and deletion. Some disadvantages of the stack in industry is their vulnerability to security attacks such as a buffer overflow where an oversized or undersized data item is copied to the stack and memory addresses are being overwritten and corrupted. Also, stack overflows occur when the call stack pointer exceeds the stack bound which may be predetermined by a limited amount of address space. Additionally, random access in a queue is not possible, a property of a linear data structures. Stacks give great control of memory allocation and deallocation. 
+
 
 # Rubric
 
