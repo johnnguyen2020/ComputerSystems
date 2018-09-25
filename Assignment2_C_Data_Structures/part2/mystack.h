@@ -42,12 +42,16 @@ typedef struct stack{
 // The stacks fields should also be initialized to default values.
 stack_t* create_stack(unsigned int capacity){
 	// Modify the body of this function as needed.
-	stack_t* myStack = NULL;
-	myStack = (stack_t*) malloc(sizeof(myStack));
+	stack_t* myStack = NULL;                       //create myStack and initialize data members
+	myStack = (stack_t*)malloc(sizeof(myStack));
 	myStack->count = 0;
-	myStack->capacity = capacity;
-	myStack->head = (node_t*) malloc(sizeof(node_t));	
-
+	if(capacity > MAX_DEPTH){                     //logic for est. max_depth if capcity inputted is too high
+		myStack->capacity = MAX_DEPTH;
+	}
+	else{
+		myStack->capacity = capacity;
+	}
+	myStack->head = NULL;
 	return myStack;
 }
 
@@ -56,7 +60,7 @@ stack_t* create_stack(unsigned int capacity){
 // Returns 1 if true (The stack is completely empty)
 // Returns 0 if false (the stack has at least one element enqueued)
 int stack_empty(stack_t* s){
-	if (s->count == 0){
+	if (s->count == 0){          //true if count of stack is 0
 		return 1;
 	}
 	else{
@@ -69,7 +73,7 @@ int stack_empty(stack_t* s){
 // Returns 1 if true (The Stack is completely full, i.e. equal to MAX_DEPTH)
 // Returns 0 if false (the Stack has more space available to enqueue items)
 int stack_full(stack_t* s){	
-	if (s->count == MAX_DEPTH){
+	if (s->count == s->capacity){        //true if count of stack is capacity
 		return 1;
 	}
 	else{
@@ -82,21 +86,21 @@ int stack_full(stack_t* s){
 // Returns a -1 if the operation fails (otherwise returns 0 on success).
 // (i.e. if the Stack is full that is an error, but does not crash the program).
 int stack_enqueue(stack_t *s, int item){
-	if (stack_full(s) == 0){
-		s->count++;
-		node_t* stackNode = NULL;
+	if (stack_full(s) == 0){    //if stack is not full
+		s->count++;         //increment the size by 1
+		node_t* stackNode = NULL;       //create new node to be added
 		stackNode = (node_t*) malloc(sizeof(node_t));
-		stackNode->data = item;
-		stackNode->next = NULL;
-		if(s->head == NULL){
+		stackNode->data = item;    //new node stores data inputted
+		stackNode->next = NULL;    //new node is now the head and points to NULL
+		if(s->head == NULL){       //old head checks then head is update to new node 
 			s->head = stackNode;
 		}
-		else{
-		node_t* tempNode = s->head;
-		while(tempNode->next != NULL){
-			tempNode = (void*) tempNode->next;
-		}
-		tempNode->next = (void*) stackNode;
+		else{                       //otherwise list is traversed until last eleemnt and the tempNode points to the new node                                 			
+			node_t* tempNode = s->head;
+			while(tempNode->next != NULL){             //traverse condition until last element 
+				tempNode = (node_t*) tempNode->next;
+			}
+			tempNode->next = (void*) stackNode;
 		}
 		return 0;
 	}
@@ -110,23 +114,23 @@ int stack_enqueue(stack_t *s, int item){
 // removes an item from the stack.
 // Removing from an empty stack should crash the program, call exit(1).
 int stack_dequeue(stack_t *s){
-	if (stack_empty(s) == 0 && s->count==1){
-		s->count--;
-		node_t* temp = s->head;
+	if (stack_empty(s) == 0 && s->count==1){ //if stack is not empty and there is one element
+		s->count--;                      //decrment by one for removal 
+		node_t* temp = s->head;          //delete the head and use next to make head point to next
 		free(s->head);
 		int item = temp->data;	
-		return item;
-	}
-	else if (stack_empty(s) == 0 && s->count>1){
-		s->count--;
-		node_t* tempNode = s->head;
-		node_t* temp;
+		return item;                     //return data removed
+	} 
+	else if (stack_empty(s) == 0 && s->count>1){ //if not empty and stack is greater than one
+		s->count--;                          //decrment by one 
+		node_t* tempNode = s->head;          //set temp to head of list 
+		node_t* temp;                        //temp is used to track of node before its deleted
 		while(tempNode->next != NULL){
-			temp = tempNode;
-			tempNode = (void*) tempNode->next;
+			temp = tempNode;            //while temp is not null, iterate and update net data member           
+			tempNode = (node_t*) tempNode->next;
 		}
-		int item = tempNode->data;
-		free(temp->next);
+		int item = tempNode->data; //once tracked to last element, return data item
+		free(temp->next);         //free and set temp to NULL
 		temp->next = NULL;
 		return item;
 	}
@@ -140,7 +144,7 @@ int stack_dequeue(stack_t *s){
 // A stack that has not been previously created will crash the program.
 // (i.e. A NULL stack cannot return the size)
 unsigned int stack_size(stack_t* s){
-	if(s != NULL){
+	if(s != NULL){                  //if s is created, return number of elements 
 		return s->count;
 	}
 	else{
@@ -152,34 +156,14 @@ unsigned int stack_size(stack_t* s){
 // Removes a stack and ALL of its elements from memory.
 // This should be called before the proram terminates.
 void free_stack(stack_t* s){
-	if( s==NULL){
-		return;
+	node_t* tempNode = s->head;           //create 2 node_t for tracking head and next node       
+	node_t* nextNode = NULL;
+	while(tempNode->next != NULL){               //while head does not point to NULL
+		nextNode = (void*) tempNode->next;   //next node becomes pointer to head
+		free(tempNode);                      //frees tempNode to update head to next  node to be deleted 
+		tempNode = nextNode;
 	}
-	else{
-		node_t* tempNode = s->head;
-		node_t* nextNode = NULL;
-		while(tempNode != NULL){
-			nextNode = (void*) tempNode->next;
-			free(tempNode);
-		}
-		free(s);
-	}
-}
-
-void print_stack(stack_t* s){
-	if (s==NULL){
-		return;
-	}
-	else{
-		int i;
-		node_t* newNode = (node_t*) malloc(sizeof(node_t));
-		for(i=0; i<stack_size(s);i++){
-			newNode = s->head;
-			printf(" %d ",  newNode->data);
-			newNode->next = (void*) newNode;
-		}
-	}
-
+	free(s);
 }
 
 

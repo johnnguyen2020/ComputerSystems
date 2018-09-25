@@ -43,6 +43,7 @@ int create_list(){
 
 	print_list(head);
 	free_list(head);
+	print_list(head);
 	return 0;
 }
 

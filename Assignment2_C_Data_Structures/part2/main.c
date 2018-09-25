@@ -20,25 +20,30 @@
 // We will be adding our own to test your program.
 void unitTest1(){
 
-	stack_t* test1 = create_stack(MAX_DEPTH);
+	stack_t* test1 = create_stack(10);
 	printf("Attempting to push %d\n",1);
 	stack_enqueue(test1,10);	
-	stack_enqueue(test1,20);	
+	stack_dequeue(test1);	
 	stack_enqueue(test1,30);
+	stack_enqueue(test1,40);
+	stack_enqueue(test1,50);
 	printf("Stack size is %d ", stack_size(test1));	
 	printf("Removing: %d\n",stack_dequeue(test1));	
 	//print_stack(test1);
 	free_stack(test1);
 }
 
-
+void unitTest2(){
+	stack_t* test2 = create_stack(5);
+	free_stack(test2);
+}
 // ====================================================
 // ================== Program Entry ===================
 // ====================================================
 int main(){
 
 	// List of Unit Tests to test your data structure	
-	unitTest1();
+	unitTest2();
 
 	return 0;
 }

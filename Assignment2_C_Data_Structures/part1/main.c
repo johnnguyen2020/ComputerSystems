@@ -42,8 +42,45 @@ void unitTest2(){
 	printf("Is queue empty?: %d\n",queue_empty(test2));	
 	printf("Is queue full?: %d\n",queue_full(test2));	
 	printf("Queue Size: %d\n",queue_size(test2));
-	print_list(test2);
+	//print_list(test2);
 	free_queue(test2);
+}
+
+void unitTest3(){
+	queue_t* test3 = create_queue(5);
+	printf("Attempting to add %d\n",7);
+	queue_enqueue(test3,10);	
+	queue_enqueue(test3,20);	
+	queue_enqueue(test3,30);	
+	queue_enqueue(test3,40);	
+	queue_enqueue(test3,500);	
+	queue_enqueue(test3,60);	
+	queue_enqueue(test3,70);	
+	
+	printf("Is queue empty?: %d\n",queue_empty(test3));	
+	printf("Is queue full?: %d\n",queue_full(test3));	
+	printf("Queue Size: %d\n",queue_size(test3));
+	//print_list(test3);
+	free_queue(test3);
+}
+
+void unitTest4(){
+	queue_t* test4 = create_queue(7);
+	printf("Attempting to add %d\n",7);
+	queue_enqueue(test4,10);	
+	queue_enqueue(test4,20);	
+	queue_enqueue(test4,30);	
+	queue_enqueue(test4,40);	
+	queue_enqueue(test4,500);
+	queue_dequeue(test4);	
+	queue_enqueue(test4,60);	
+	queue_enqueue(test4,70);	
+	
+	printf("Is queue empty?: %d\n",queue_empty(test4));	
+	printf("Is queue full?: %d\n",queue_full(test4));	
+	printf("Queue Size: %d\n",queue_size(test4));
+	//print_list(test4);
+	free_queue(test4);
 }
 
 
@@ -57,6 +94,8 @@ int main(){
 
 	// List of Unit Tests to test your data structure	
 	unitTest2();
+	unitTest3();
+	unitTest4();
 
 	return 0;
 }
