@@ -56,7 +56,9 @@ Circular queues are used quite a bit in operating systems and high performance s
 
 # TODO: Put your answer here
 
-*My answer is ...*
+A queue is a data type that has two primary functions, to enqueue an element and to dequeue an element. The queue is like a line waiting at a cash register which has the order of first in first out or FIFO. The queue is a linear data structure where new elements are added at the rear position and old elements are removed at the front position. Queues can be implemented through arrays or linked lists. Other functions commonly used when implementing a queue are the size of queue function, print the queue function, return the head and tail index and determine if the queue is empty or full.
+	Queues are commonly used in services where there is a demand and a need for organization. For example, the storage of data, objects and persons must be stored and processed later and the queue is an effective method for controlling this. Common implementations are as circular buffers and linked lists. Thus, queues are good at processing items as they come like handling requests. Where a queue is not advantageous is when tracing events or tree structures. Additionally, random access in a queue is not possible, a property of a linear data structures. Although queues can hold any data types, the queue is not readily searchable without going from front to end. The runtime complexity of queue is O(n) for traversing and O(1) for inserting and deleting.
+
 
 # Rubric
 

@@ -1,11 +1,11 @@
 # TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: John Nguyen
+- How many hours did it take you to complete this assignment? 15
+- Did you collaborate with any other students/TAs/Professors? Durwasa
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  - http://www.valgrind.org/downloads/current.html
+  - https://www.geeksforgeeks.org/stack-data-structure-introduction-program/
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
