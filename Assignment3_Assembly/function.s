@@ -1,6 +1,6 @@
 # This function adds two static numbers together
 #Subrtraction works through the neg instruction to convert into two's complement
-#function2.s in the git repo reads input/ouput but i could not get it to work
+#NOTE! function2.s in the git repo reads input/ouput but i could not get it to work properly
 .global _start
 
 .welcomeMessage:       #welcome prompt assembly directive
