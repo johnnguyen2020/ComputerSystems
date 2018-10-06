@@ -202,20 +202,20 @@ Total Cycles = ???
 Our Cycle Count Tool is what we call a 'static analysis'. That is, it uncovers information about our programs before it is running (during compile-time). Given that our tool uncovers information before the program, what is (at least) one pro of this, and one con you can think of?
 
 Pro:
-1. Examines all possible execution paths and variable values as opposed to the just the paths and variables invoked during execution. Static testing finds erros at an early stage which reduces the cost of fixing and with automated tools, it becomes fast to review software and provide quick fix recommendations
+1. Examines all possible execution paths and variable values as opposed to the just the paths and variables invoked during runtime. Static testing finds errors in the code at an early stage in the development cycle which reduces the cost of fixing later on and errors can be traced to their exact location.
 
 Con:
-1. Static testing demands a lot of time when implemented manually and a major part of static analysis is the usage of automated tools which only scan code and cannot identify occurs/weak points that occur during run time
+1. Static testing demands a lot of time when implemented manually and a major part of static analysis is the usage of automated tools which only scan code and cannot identify occurs/weak points that occur during run time such as memory issues.
 
 ## Dynamic Analysis
 
 The opposite of a static analysis is a dynamic analysis. Dynamic analysis tools record and return information about programs that are in the process or have finished executing. An example of a dynamic analysis tool is [valgrind](http://valgrind.org/). What do you think a pro and con of dynamic analysis would be?
 
 Pro:
-1. Reveals subtle defects or vulnerabilities whose cause is too complex to be discovered by static analysis. Dynamic analysis can also be applied with any application
+1. Reveals subtle defects or vulnerabilities whose cause is too complex to be discovered by static analysis. Dynamic analysis allows for analysis of applications where the source code is not available.
 
 Con:
-1. One potential con of dynamic analysis is a considerable decrease in performance. With dynamic analysis such as Valgrind, code is converted in many different forms and programs running within Valgrind as opposed to outside it, are slower. 
+1. One potential con of dynamic analysis is a considerable decrease in performance. With dynamic analysis such as Valgrind, code is converted in many different forms and programs running within Valgrind as opposed to outside it, are slower. Additionally, errors are often more difficult to trace to their exact location.
 
 # Part 3 - GDB Introduction 
 
@@ -306,8 +306,8 @@ In a brief sentence or two.
 3. What is the fix for the bug?
 
 The bug is on line 15 and the bug is a segmentation fault. The segmentation fault occurs in the following code:
-movl $0x1f4, (%rax)
-More specifically, the syntax for movl data movement is source and then destination as the 1st and 2nd arguments. In line 15, the destination argument is (%rax) which is not a destination address. The parentheses denote a dereference of an address and a value cannot be the destination. 
+ movl $0x1f4, (%rax)
+More specifically, the syntax for movl data movement is source and then destination as the 1st and 2nd arguments. In line 15, the destination argument is (%rax) which is not a destination address. The parentheses denote a dereference of an address and a value cannot be the destination. Another fix is allocating space in the register by specifying the offset or the size of the bytes after the address stored in rax.
 
 ## Aside: Core dump
 
