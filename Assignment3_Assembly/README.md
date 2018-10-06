@@ -201,20 +201,20 @@ Total Cycles = ???
 Our Cycle Count Tool is what we call a 'static analysis'. That is, it uncovers information about our programs before it is running (during compile-time). Given that our tool uncovers information before the program, what is (at least) one pro of this, and one con you can think of?
 
 Pro:
-1. *TODO: EDIT README WITH YOUR ANSWER HERE*
+1. Examines all possible execution paths and variable values as opposed to the just the paths and variables invoked during execution. Static testing finds erros at an early stage which reduces the cost of fixing and with automated tools, it becomes fast to review software and provide quick fix recommendations
 
 Con:
-1. *TODO: EDIT README WITH YOUR ANSWER HERE*
+1. Static testing demands a lot of time when implemented manually and a major part of static analysis is the usage of automated tools which only scan code and cannot identify occurs/weak points that occur during run time
 
-## Dyanmic Analysis
+## Dynamic Analysis
 
 The opposite of a static analysis is a dynamic analysis. Dynamic analysis tools record and return information about programs that are in the process or have finished executing. An example of a dynamic analysis tool is [valgrind](http://valgrind.org/). What do you think a pro and con of dynamic analysis would be?
 
 Pro:
-1. *TODO: EDIT README WITH YOUR ANSWER HERE*
+1. Reveals subtle defects or vulnerabilities whose cause is too complex to be discovered by static analysis. Dynamic analysis can also be applied with any application
 
 Con:
-1. *TODO: EDIT README WITH YOUR ANSWER HERE*
+1. One potential con of dynamic analysis is a considerable decrease in performance. With dynamic analysis such as Valgrind, code is converted in many different forms and programs running within Valgrind as opposed to outside it, are slower. 
 
 # Part 3 - GDB Introduction 
 
@@ -301,8 +301,12 @@ It has been compiled with debugging symbols(*-g*) so you may investigate and vie
 In a brief sentence or two.
 
 1. What was the bug?
-2. What line did the bug occur?
+2. What line did the bug occur? 
 3. What is the fix for the bug?
+
+The bug is on line 15 and the bug is a segmentation fault. The segmentation fault occurs in the following code:
+movl $0x1f4, (%rax)
+More specifically, the syntax for movl data movement is source and then destination as the 1st and 2nd arguments. In line 15, the destination argument is (%rax) which is not a destination address. The parentheses denote a dereference of an address and a value cannot be the destination. 
 
 ## Aside: Core dump
 
