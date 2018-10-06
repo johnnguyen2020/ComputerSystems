@@ -1,90 +1,118 @@
-==107837== Memcheck, a memory error detector
-==107837== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
-==107837== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
-==107837== Command: ./TestAssignment2
-==107837== Parent PID: 107830
-==107837== 
---107837-- 
---107837-- Valgrind options:
---107837--    --leak-check=full
---107837--    --show-leak-kinds=all
---107837--    --track-origins=yes
---107837--    --log-file=Assignment2_C_Data_Structures-Assignment2-valgrind.log
---107837--    --verbose
---107837-- Contents of /proc/version:
---107837--   Linux version 3.10.0-862.14.4.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) ) #1 SMP Wed Sep 26 15:12:11 UTC 2018
---107837-- 
---107837-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
---107837-- Page sizes: currently 4096, max supported 4096
---107837-- Valgrind library directory: /usr/lib64/valgrind
---107837-- Reading syms from /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2
---107837-- Reading syms from /usr/lib64/ld-2.17.so
---107837-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
---107837--    object doesn't have a symbol table
---107837--    object doesn't have a dynamic symbol table
---107837-- Scheduler: using generic scheduler lock implementation.
---107837-- Reading suppressions file: /usr/lib64/valgrind/default.supp
-==107837== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-107837-by-prdx-on-login-students.ccs.neu.edu
-==107837== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-107837-by-prdx-on-login-students.ccs.neu.edu
-==107837== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-107837-by-prdx-on-login-students.ccs.neu.edu
-==107837== 
-==107837== TO CONTROL THIS PROCESS USING vgdb (which you probably
-==107837== don't want to do, unless you know exactly what you're doing,
-==107837== or are doing some strange experiment):
-==107837==   /usr/lib64/valgrind/../../bin/vgdb --pid=107837 ...command...
-==107837== 
-==107837== TO DEBUG THIS PROCESS USING GDB: start GDB like this
-==107837==   /path/to/gdb ./TestAssignment2
-==107837== and then give GDB the following command
-==107837==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=107837
-==107837== --pid is optional if only one valgrind process is running
-==107837== 
---107837-- REDIR: 0x40192f0 (ld-linux-x86-64.so.2:strlen) redirected to 0x38058d51 (???)
---107837-- REDIR: 0x40190c0 (ld-linux-x86-64.so.2:index) redirected to 0x38058d6b (???)
---107837-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
---107837-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
-==107837== WARNING: new redirection conflicts with existing -- ignoring it
---107837--     old: 0x040192f0 (strlen              ) R-> (0000.0) 0x38058d51 ???
---107837--     new: 0x040192f0 (strlen              ) R-> (2007.0) 0x04c2ca90 strlen
---107837-- REDIR: 0x4019270 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2dbe0 (strcmp)
---107837-- REDIR: 0x4019e60 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c30c60 (mempcpy)
---107837-- Reading syms from /usr/lib64/libc-2.17.so
---107837-- REDIR: 0x4ebff80 (libc.so.6:strcasecmp) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
---107837-- REDIR: 0x4ebcd00 (libc.so.6:strnlen) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
---107837-- REDIR: 0x4ec2250 (libc.so.6:strncasecmp) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
---107837-- REDIR: 0x4ebf760 (libc.so.6:memset) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
---107837-- REDIR: 0x4ebf710 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
---107837-- REDIR: 0x4ebe6f0 (libc.so.6:__GI_strrchr) redirected to 0x4c2c450 (__GI_strrchr)
---107837-- REDIR: 0x4eb60c0 (libc.so.6:malloc) redirected to 0x4c29b5c (malloc)
---107837-- REDIR: 0x4eb64c0 (libc.so.6:free) redirected to 0x4c2ac56 (free)
-==107837== 
-==107837== HEAP SUMMARY:
-==107837==     in use at exit: 44 bytes in 2 blocks
-==107837==   total heap usage: 2 allocs, 0 frees, 44 bytes allocated
-==107837== 
-==107837== Searching for pointers to 2 not-freed blocks
-==107837== Checked 69,912 bytes
-==107837== 
-==107837== 20 bytes in 1 blocks are still reachable in loss record 1 of 2
-==107837==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
-==107837==    by 0x4007A1: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837==    by 0x400953: test_queue_refill (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837==    by 0x402D75: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837==    by 0x400CFE: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837== 
-==107837== 24 bytes in 1 blocks are still reachable in loss record 2 of 2
-==107837==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
-==107837==    by 0x400759: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837==    by 0x400953: test_queue_refill (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837==    by 0x402D75: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837==    by 0x400CFE: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
-==107837== 
-==107837== LEAK SUMMARY:
-==107837==    definitely lost: 0 bytes in 0 blocks
-==107837==    indirectly lost: 0 bytes in 0 blocks
-==107837==      possibly lost: 0 bytes in 0 blocks
-==107837==    still reachable: 44 bytes in 2 blocks
-==107837==         suppressed: 0 bytes in 0 blocks
-==107837== 
-==107837== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-==107837== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==122077== Memcheck, a memory error detector
+==122077== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==122077== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
+==122077== Command: ./TestAssignment2
+==122077== Parent PID: 122070
+==122077== 
+--122077-- 
+--122077-- Valgrind options:
+--122077--    --leak-check=full
+--122077--    --show-leak-kinds=all
+--122077--    --track-origins=yes
+--122077--    --log-file=Assignment2_C_Data_Structures-Assignment2-valgrind.log
+--122077--    --verbose
+--122077-- Contents of /proc/version:
+--122077--   Linux version 3.10.0-862.14.4.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-28) (GCC) ) #1 SMP Wed Sep 26 15:12:11 UTC 2018
+--122077-- 
+--122077-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--122077-- Page sizes: currently 4096, max supported 4096
+--122077-- Valgrind library directory: /usr/lib64/valgrind
+--122077-- Reading syms from /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2
+--122077-- Reading syms from /usr/lib64/ld-2.17.so
+--122077-- Reading syms from /usr/lib64/valgrind/memcheck-amd64-linux
+--122077--    object doesn't have a symbol table
+--122077--    object doesn't have a dynamic symbol table
+--122077-- Scheduler: using generic scheduler lock implementation.
+--122077-- Reading suppressions file: /usr/lib64/valgrind/default.supp
+==122077== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-122077-by-prdx-on-login-students.ccs.neu.edu
+==122077== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-122077-by-prdx-on-login-students.ccs.neu.edu
+==122077== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-122077-by-prdx-on-login-students.ccs.neu.edu
+==122077== 
+==122077== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==122077== don't want to do, unless you know exactly what you're doing,
+==122077== or are doing some strange experiment):
+==122077==   /usr/lib64/valgrind/../../bin/vgdb --pid=122077 ...command...
+==122077== 
+==122077== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==122077==   /path/to/gdb ./TestAssignment2
+==122077== and then give GDB the following command
+==122077==   target remote | /usr/lib64/valgrind/../../bin/vgdb --pid=122077
+==122077== --pid is optional if only one valgrind process is running
+==122077== 
+--122077-- REDIR: 0x40192f0 (ld-linux-x86-64.so.2:strlen) redirected to 0x38058d51 (???)
+--122077-- REDIR: 0x40190c0 (ld-linux-x86-64.so.2:index) redirected to 0x38058d6b (???)
+--122077-- Reading syms from /usr/lib64/valgrind/vgpreload_core-amd64-linux.so
+--122077-- Reading syms from /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so
+==122077== WARNING: new redirection conflicts with existing -- ignoring it
+--122077--     old: 0x040192f0 (strlen              ) R-> (0000.0) 0x38058d51 ???
+--122077--     new: 0x040192f0 (strlen              ) R-> (2007.0) 0x04c2ca90 strlen
+--122077-- REDIR: 0x4019270 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c2dbe0 (strcmp)
+--122077-- REDIR: 0x4019e60 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c30c60 (mempcpy)
+--122077-- Reading syms from /usr/lib64/libc-2.17.so
+--122077-- REDIR: 0x4ebff80 (libc.so.6:strcasecmp) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
+--122077-- REDIR: 0x4ebcd00 (libc.so.6:strnlen) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
+--122077-- REDIR: 0x4ec2250 (libc.so.6:strncasecmp) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
+--122077-- REDIR: 0x4ebf760 (libc.so.6:memset) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
+--122077-- REDIR: 0x4ebf710 (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a247b0 (_vgnU_ifunc_wrapper)
+--122077-- REDIR: 0x4ebe6f0 (libc.so.6:__GI_strrchr) redirected to 0x4c2c450 (__GI_strrchr)
+--122077-- REDIR: 0x4eb60c0 (libc.so.6:malloc) redirected to 0x4c29b5c (malloc)
+--122077-- REDIR: 0x4eb64c0 (libc.so.6:free) redirected to 0x4c2ac56 (free)
+==122077== 
+==122077== HEAP SUMMARY:
+==122077==     in use at exit: 180 bytes in 6 blocks
+==122077==   total heap usage: 12 allocs, 6 frees, 262,452 bytes allocated
+==122077== 
+==122077== Searching for pointers to 6 not-freed blocks
+==122077== Checked 69,768 bytes
+==122077== 
+==122077== 20 bytes in 1 blocks are indirectly lost in loss record 1 of 6
+==122077==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
+==122077==    by 0x400751: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x4008FE: test_queue_refill (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x402D20: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400CA9: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077== 
+==122077== 40 bytes in 1 blocks are indirectly lost in loss record 2 of 6
+==122077==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
+==122077==    by 0x400751: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400B81: test_queue_size (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x402D20: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400CF9: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077== 
+==122077== 44 (24 direct, 20 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 6
+==122077==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
+==122077==    by 0x400709: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x4008FE: test_queue_refill (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x402D20: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400CA9: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077== 
+==122077== 48 bytes in 1 blocks are indirectly lost in loss record 4 of 6
+==122077==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
+==122077==    by 0x400751: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400A54: test_queue_half_refill (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x402D20: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400CD1: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077== 
+==122077== 64 (24 direct, 40 indirect) bytes in 1 blocks are definitely lost in loss record 5 of 6
+==122077==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
+==122077==    by 0x400709: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400B81: test_queue_size (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x402D20: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400CF9: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077== 
+==122077== 72 (24 direct, 48 indirect) bytes in 1 blocks are definitely lost in loss record 6 of 6
+==122077==    at 0x4C29BE3: malloc (vg_replace_malloc.c:299)
+==122077==    by 0x400709: create_queue (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400A54: test_queue_half_refill (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x402D20: UnityDefaultTestRun (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077==    by 0x400CD1: main (in /home/prdx/CS3650/monorepo-johnnguyen2020/Assignment2_C_Data_Structures/part1/TestAssignment2)
+==122077== 
+==122077== LEAK SUMMARY:
+==122077==    definitely lost: 72 bytes in 3 blocks
+==122077==    indirectly lost: 108 bytes in 3 blocks
+==122077==      possibly lost: 0 bytes in 0 blocks
+==122077==    still reachable: 0 bytes in 0 blocks
+==122077==         suppressed: 0 bytes in 0 blocks
+==122077== 
+==122077== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
+==122077== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)
