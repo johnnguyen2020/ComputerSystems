@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-
 void msg(){
 	printf("Hello!\n");
+	sleep(1);
 }
 
 
 int main(){
-
 	int i;
 	for(i= 0;i  < 10; ++i){
 		msg();
