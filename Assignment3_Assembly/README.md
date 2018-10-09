@@ -3,14 +3,15 @@
 TODO Please edit the following information in your assignment
 
 - Name: John Nguyen
-- How many hours did it take you to complete this assignment? 30
+- How many hours did it take you to complete this assignment? 50
 - Did you collaborate with any other students/TAs/Professors? Durwasa and Ray Trebicka
 - Did you use any external resources?
   - https://en.wikipedia.org/wiki/Valgrind#Limitations_of_Memcheck
-  -https://www.systems.ethz.ch/sites/default/files/file/COURSES/2014%20FALL%20COURSES/2014_Fall_SPCA/lectures/x86_64_asm_cheat_sheet.pdf
+  https://www.systems.ethz.ch/sites/default/files/file/COURSES/2014%20FALL%20COURSES/2014_Fall_SPCA/lectures/x86_64_asm_cheat_sheet.pdf
+  https://baptiste-wicht.com/posts/2011/11/print-strings-integers-intel-assembly.html
   
 - (Optional) What was your favorite part of the assignment?
-- (Optional) How would you improve the assignment?
+- (Optional) How would you improve the assignment? More examples and guides
 
 
 # Introduction
