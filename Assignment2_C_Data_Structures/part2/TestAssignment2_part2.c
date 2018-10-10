@@ -94,7 +94,6 @@ UNITY_BEGIN();
 RUN_TEST(test_stack_refill);
 RUN_TEST(test_stack_overflow);
 RUN_TEST(test_stack_half_refill);
-RUN_TEST(test_stack_max_int);
 RUN_TEST(test_stack_size);
 RUN_TEST(test_stack_empty);
 return UNITY_END();
