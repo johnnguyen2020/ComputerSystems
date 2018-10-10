@@ -87,7 +87,7 @@ int queue_enqueue(queue_t *q, int item){
 // Dequeue an item
 // Returns the item at the front of the queue and
 // removes an item from the queue.
-// Removing from an empty queue should crash the program, call exit(1)
+// Removing from an empty queue should crash the program, call return -1
 int queue_dequeue(queue_t *q){
 	if (queue_full(q) == 1){                          //if queue is capacity
 		int item = q->data[q->front];             //remove item in front
@@ -96,7 +96,7 @@ int queue_dequeue(queue_t *q){
 		return item;
 	}
 	else{
-		exit(1); // Note: This line is a filler so the code compiles.
+		return -1; // Note: This line is a filler so the code compiles.
 	}
 }	
 
@@ -104,7 +104,7 @@ int queue_dequeue(queue_t *q){
 // Queue Size
 // Queries the current size of a queue
 // A queue that has not been previously created will crash the program.
-// (i.e. A NULL queue cannot return the size, call exit(1))
+// (i.e. A NULL queue cannot return the size, call return -1)
 unsigned int queue_size(queue_t* q){
 	if (q != NULL){                     //if queue exists reurn count of elements
 		return q->size;
