@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h> // This is new!
-
+#include <unistd.h> 
 
 // Create a signal handler
 void sigint_handler(int sig){
@@ -25,3 +25,20 @@ int main(){
 
 	return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
