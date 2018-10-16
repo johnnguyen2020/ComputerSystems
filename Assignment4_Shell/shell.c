@@ -62,20 +62,14 @@ void execute(char **argv){
 
 	else{
 		while (wait(&status) != pid);
-		//printf("Command not found\n");	
 	}
 }
 
 void foo_cd(char *d)
 {
-	//char cwd[256];
-	//char* currentD = getcwd(cwd, sizeof(cwd));
-	//printf("%s\n", d);
-	//printf("hi\n");
-	//char *src = '/';
-	//char *strcat(src, d);  
-	chdir(d);
-
+	if (chdir(d) != 0){
+		perror("error");
+	} 
 }
 
 
@@ -158,7 +152,7 @@ int main(){
 		*/
 		//fgets(line, MAX_BUF_SZ, stdin);
 		//printf("\n");
-		gets(line);
+		fgets(line, MAX_BUF_SZ, stdin);
 		if (*line != '\0'){
 		parse(line, argv);
 		
@@ -190,9 +184,7 @@ int main(){
 				break;
 			}
 		}
-
 		
-		//int i;	
 		/*
 		for(i=0; argvLeft[i] != '\0'; i++){
 			printf("%s\n", argvLeft[i]);
@@ -227,8 +219,7 @@ int main(){
 			else if (strcmp(argv[0],"help") == 0){ help();}
 			else if (strcmp(argv[0],"guessgame") == 0){ guessgame();}	
 			else if (strcmp(argv[0],"cd") == 0){ foo_cd(argv[1]);}
-			//else{printf("Command not found\n");}	
-			execute(argv);
+			else{execute(argv);}
 		}
 		}
 		}
