@@ -19,7 +19,8 @@ void sigint_handler(int sig){
 }
 
 
-void parse(char *line, char **argv){
+void parse(char *line, char ** argv){
+	/*
 	while (*line != '\0'){
 		while (*line == ' ' || *line == '\t' || *line == '\n')
 			*line++ = '\0';
@@ -28,11 +29,23 @@ void parse(char *line, char **argv){
 			line++;
 	}
 	*argv = '\0';
+	*/
+	int i = 0;
+	//char * argv[80];
+	char * token;
+	token = strtok(line," \t\r\n\a");
+	while (token != NULL){
+		argv[i] = token;
+		i++;
+		token = strtok(NULL, " \t\r\n\a");
+	}
+	argv[i] = '\0';
 }
 
 void execute(char **argv){
 	pid_t pid;
 	int status;
+
 	if((pid = fork()) < 0){
 		printf("Command not found\n");	
 		exit(1);
@@ -111,7 +124,9 @@ int main(){
 
 	//printf("You can only terminate by pressing Ctrl+C\n");
 	char line[MAX_BUF_SZ];
-	char* argv[100];
+	
+	char* argv[80];
+	
 	char* path= "/bin/";
 	char progpath[20];
 	int argc; 
@@ -146,12 +161,75 @@ int main(){
 		gets(line);
 		if (*line != '\0'){
 		parse(line, argv);
-		if (strcmp(argv[0],"exit") == 0){ exit(0);}
-		else if (strcmp(argv[0],"help") == 0){ help();}
-		else if (strcmp(argv[0],"guessgame") == 0){ guessgame();}	
-		else if (strcmp(argv[0],"cd") == 0){ foo_cd(argv[1]);}
-		//else{printf("Command not found\n");}	
-		execute(argv);
+		
+	        
+		int i;	
+		for(i=0; argv[i] != '\0'; i++){
+			printf("%s\n", argv[i]);
+			//printf("hi\n");
+		}
+
+		int j;
+		int k;
+		char *argvLeft[80];
+		//argvLeft = (char*)malloc(MAX_BUF_SZ*sizeof(char));
+		char *argvRight[80];
+		//argvRight = (char*)malloc(MAX_BUF_SZ*sizeof(char));
+		for(j=0; argv[j] != '\0'; j++){
+			if(*argv[j] != 124){
+				argvLeft[j] = argv[j];
+			
+			}
+			else{
+				j++;
+				for(k=0; argv[j] != '\0'; k++){
+					argvRight[k] = argv[j];
+					printf("pipe detect\n");
+					j++;
+				}
+				break;
+			}
+		}
+
+		
+		//int i;	
+		/*
+		for(i=0; argvLeft[i] != '\0'; i++){
+			printf("%s\n", argvLeft[i]);
+			//printf("hi\n");
+		}	
+		for(i=0; argvRight[i] != '\0'; i++){
+			printf("%s\n", argvRight[i]);
+			//printf("hi\n");
+		}
+		*/
+
+		if(argvRight[0] != NULL){
+			pid_t pid2;
+			int mypipe[2];
+			pipe(mypipe);
+			pid2 = fork();
+
+			if (pid2==0){
+				dup2(mypipe[0], 0);
+				close(mypipe[1]);
+				execvp(argvRight[0], argvRight);
+				exit(1);
+			}
+			else{
+				dup2(mypipe[1], 1);
+				close(mypipe[0]);
+				execvp(argvLeft[0], argvLeft);
+			}
+		}		
+		else{
+			if (strcmp(argv[0],"exit") == 0){ exit(0);}
+			else if (strcmp(argv[0],"help") == 0){ help();}
+			else if (strcmp(argv[0],"guessgame") == 0){ guessgame();}	
+			else if (strcmp(argv[0],"cd") == 0){ foo_cd(argv[1]);}
+			//else{printf("Command not found\n");}	
+			execute(argv);
+		}
 		}
 		}
 
