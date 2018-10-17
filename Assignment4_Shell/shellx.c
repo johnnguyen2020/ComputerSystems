@@ -62,7 +62,7 @@ void execute(char **argv){
 
 	else{
 		while (wait(&status) != pid);
-	}
+	}		
 }
 
 void foo_cd(char *d)
@@ -151,18 +151,22 @@ int main(){
 		}
 		*/
 		//fgets(line, MAX_BUF_SZ, stdin);
+		//printf("%s\n", line);
 		//printf("\n");
-		fgets(line, MAX_BUF_SZ, stdin);
-		if (*line != '\0'){
+		gets(line);
+		//printf("before parse");
+		if (*line != '\0' && *line != ' ' && *line != '\t'){
+		//if(line != NULL){
 		parse(line, argv);
-		
-	        
+		//printf("finish parse");
+		//print for loop
+	        /*
 		int i;	
 		for(i=0; argv[i] != '\0'; i++){
 			printf("%s\n", argv[i]);
 			//printf("hi\n");
 		}
-
+		*/
 		int j;
 		int k;
 		char *argvLeft[80];
@@ -178,14 +182,14 @@ int main(){
 				j++;
 				for(k=0; argv[j] != '\0'; k++){
 					argvRight[k] = argv[j];
-					printf("pipe detect\n");
+					//printf("pipe detect\n");
 					j++;
 				}
 				break;
 			}
 		}
 		
-		/*
+	int i;	
 		for(i=0; argvLeft[i] != '\0'; i++){
 			printf("%s\n", argvLeft[i]);
 			//printf("hi\n");
@@ -194,11 +198,11 @@ int main(){
 			printf("%s\n", argvRight[i]);
 			//printf("hi\n");
 		}
-		*/
 
 		if(argvRight[0] != NULL){
-			pid_t pid2;
+			pid_t pid2, pid3;
 			int mypipe[2];
+			int status;
 			pipe(mypipe);
 			pid2 = fork();
 
@@ -209,9 +213,27 @@ int main(){
 				exit(1);
 			}
 			else{
+				pid3 = fork();
+				if (pid3 == 0){
 				dup2(mypipe[1], 1);
 				close(mypipe[0]);
 				execvp(argvLeft[0], argvLeft);
+				}
+				else{
+					while (wait(&status) != pid3);		
+					//while (wait(&status) != pid2);		
+				}
+				
+			}
+			int i = 0;
+			while(argvRight[i] != '\0'){
+				argvLeft[i] = '\0';
+				i++;
+			}
+			int j = 0;
+			while(argvRight[j] != '\0'){
+				argvRight[j] = '\0';
+				j++;
 			}
 		}		
 		else{
@@ -220,9 +242,19 @@ int main(){
 			else if (strcmp(argv[0],"guessgame") == 0){ guessgame();}	
 			else if (strcmp(argv[0],"cd") == 0){ foo_cd(argv[1]);}
 			else{execute(argv);}
+			int i = 0;
+			while(argvLeft[i] != '\0'){
+				argvLeft[i] = '\0';
+				i++;
+			}
+			int j = 0;
+			while(argvRight[j] != '\0'){
+				argvRight[j] = '\0';
+				j++;
+			}
+		}		
 		}
-		}
-		}
+	}
 
 	return 0;	
 }
