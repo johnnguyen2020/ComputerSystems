@@ -1,5 +1,7 @@
 # Due Date: October 16, 2018 at 11:59 PM.
-
+NOTE: server was lagging so the final project is shellx.c before I got a chance to rename it!
+      pls ignore newTest folder
+      
 TODO Please edit the following information in your assignment
 
 - Name: John Nguyen
