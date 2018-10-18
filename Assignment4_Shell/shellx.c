@@ -10,12 +10,14 @@
 
 
 const int MAX_BUF_SZ = 80; //Assumed max size for input buffer
-char str_exit[4]; //size of string exit
+//char str_exit[4]; //size of string exit
 //Create a signal handler
+
 void sigint_handler(int sig){
 	write(1,"mini-shell terminatd\n",21); //execute exit syscall
 	exit(0);
 }
+
 
 void parse(char *line, char ** argv){
 	int i = 0;
@@ -49,8 +51,11 @@ void execute(char **argv){
 
 void foo_cd(char *d)                            //Built in command change directory
 {
+	if (d == '\0')
+		{d = "/home/johnnguyen";}
 	if (chdir(d) != 0)
 		{perror("error");} 
+	free(d);
 }
 
 int help(){                                                     //prints help manual
@@ -89,11 +94,13 @@ void guessgame(){
 }
 
 int main(){
-	strcpy(str_exit, "exit");           //fill buffer with "exit"
 	// Install our signal handler
 	signal(SIGINT, sigint_handler);
 	char line[MAX_BUF_SZ];	            //initialize with max size
 	char* argv[80];			    //initialize char arrary pointer 
+	argv[0] = NULL;
+	char str_exit[4]; //size of string exit
+	strcpy(str_exit, "exit");           //fill buffer with "exit"
 
 	while(1){
 		printf("mini-shell->");          //shell prompt
@@ -108,7 +115,9 @@ int main(){
 		int i,j,k; //counter variables
 	
 		char *argvLeft[80]; //declare left char array before pipe
+		argvLeft[0] = NULL;
 		char *argvRight[80]; //declare right char array after pipe
+		argvRight[0] = NULL;
 		for(j=0; argv[j] != '\0'; j++){    //124 is ascii representation of pipe
 			if(*argv[j] != 124){       //iterate through command until pipe
 				argvLeft[j] = argv[j];   //store before pipe into argvLeft		
@@ -139,16 +148,16 @@ int main(){
 			pid2 = fork();    //spawn a new process
 
 			if (pid2==0){     //if pid2 is child
-				dup2(mypipe[0], 0); //open write end of pipe and close read end
-				close(mypipe[1]);   // close pipe
-				execvp(argvRight[0], argvRight); //execute command for right of pipe
+				dup2(mypipe[1], 1); //open write end of pipe and close read end
+				close(mypipe[0]);   // close pipe
+				execvp(argvLeft[0], argvLeft); //execute command for right of pipe
 				exit(1);  //exit child
 			}
 			pid3 = fork();   //create second process and execute command for left of pipr
 			if (pid3 == 0){
-				dup2(mypipe[1], 1); 
-				close(mypipe[0]);
-				execvp(argvLeft[0], argvLeft);
+				dup2(mypipe[0], 0); 
+				close(mypipe[1]);
+				execvp(argvRight[0], argvRight);
 				}
 	
 			close(mypipe[0]); //close both ends of pipe
@@ -168,7 +177,12 @@ int main(){
 			}
 		}		
 		else{
-			if (strcmp(argv[0],"exit") == 0){ exit(0);} //if command is exit, exit()
+			if (strcmp(argv[0],"exit") == 0){ 
+				//free(line);                   //upon exit, free pointers
+				//free(argvLeft);
+				//free(argvRight);
+				//free(argv);
+				exit(0);} //if command is exit, exit()
 			else if (strcmp(argv[0],"help") == 0){ help();} //triggers help menu
 			else if (strcmp(argv[0],"guessgame") == 0){ guessgame();} //triggers guessgame	 
 			else if (strcmp(argv[0],"cd") == 0){ foo_cd(argv[1]);} //triggers built in cd 
@@ -203,7 +217,5 @@ int main(){
 
 		}
 	}	
-	free(argv);
-	free(line);
 	return 0;	
 }
