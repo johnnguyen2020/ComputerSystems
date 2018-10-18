@@ -2,12 +2,12 @@
 
 TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: John Nguyen
+- How many hours did it take you to complete this assignment? 25
+- Did you collaborate with any other students/TAs/Professors? Durwasa
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  - http://www.csl.mtu.edu/cs4411.ck/www/NOTES/process/fork/exec.html
+  - https://brennan.io/2015/01/16/write-a-shell-in-c/
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
