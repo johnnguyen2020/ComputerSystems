@@ -175,19 +175,22 @@ At a high level, implementing mini-shell takes the following components:
 -----------------------------------------------------
 NAME: 
 
-*edit me*
+guessgame
 
 SYNOPSIS: 
 
-*edit me and add in a short description of the command and its usage*
+The command enters a guessing game where the user has to pick a number from 1 to 100
 
 DESCRIPTION:
-
-*Write a longer description of what he command does*
+The game shows a welcome prompt, inviting the player to pick a number from 1 to 100.
+If the player guess, too low, the program recognizes user input and responds too low.
+Similar functionality occurs when the player guesses too high.
+The game exits when user selects the right number.
+Upon exit, program resumes execution in the mini shell.
 
 NOTES:
 
-*Enter two or three sentences (minimum) in how you implemented the built-in command.*
+To implement the built in command, I had to include it in one of my conditionals after parsing the comman line and tokenizing the comman line. If the first token, indicative of the command, is equal to "guessgame", then gameplay begins. If not, the conditionals are evaluated before returning to the infinite while loop. The guess game calls upon the math library to generate a randomn number and guessgame exits upon the cirrect number guesses. 
 
 -----------------------------------------------------
 
