@@ -112,7 +112,7 @@ int stack_enqueue(stack_t *s, int item){
 // Dequeue an item
 // Returns the item at the front of the stack and
 // removes an item from the stack.
-// Removing from an empty stack should crash the program, call exit(1).
+// Removing from an empty stack should crash the program, call return -1.
 int stack_dequeue(stack_t *s){
 	if (stack_empty(s) == 0 && s->count==1){ //if stack is not empty and there is one element
 		s->count--;                      //decrment by one for removal 
@@ -135,7 +135,7 @@ int stack_dequeue(stack_t *s){
 		return item;
 	}
 	else{
-		exit(1); // Note: This line is a 'filler' so the code compiles.
+		return -1; // Note: This line is a 'filler' so the code compiles.
 	}
 }
 
