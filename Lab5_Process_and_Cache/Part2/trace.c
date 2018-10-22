@@ -73,7 +73,7 @@ void singleTrace(int size, int value){
 // Fills badtrace.txt sequentially up to 257 and then repeats since
 // max value of 8 bit is 256
 void badTrace(int size){
-	FILE* fp = fopen("badTrace.txt","w");
+	FILE* fp = fopen("cache_unfreindly.txt","w");
 
 	srand(time(NULL));
 	for(int j = 0; j < 4; j++){     //loop 4 times
@@ -91,7 +91,7 @@ void badTrace(int size){
 // Takes in 3 arguments, size and 2 values
 // Value is filled for first half of size and value2 is filled for second half
 void goodTrace(int size, int value, int value2){
-	FILE* fp = fopen("goodTrace.txt","w");
+	FILE* fp = fopen("cache_friendly.txt","w");
 
 	srand(time(NULL));
 
