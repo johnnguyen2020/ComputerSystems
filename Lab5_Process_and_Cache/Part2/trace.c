@@ -70,13 +70,15 @@ void singleTrace(int size, int value){
 
 
 // Generaet a random data access pattern
+// Fills badtrace.txt sequentially up to 257 and then repeats since
+// max value of 8 bit is 256
 void badTrace(int size){
 	FILE* fp = fopen("badTrace.txt","w");
 
 	srand(time(NULL));
-	for(int j = 0; j < 4; j++){
+	for(int j = 0; j < 4; j++){     //loop 4 times
 	for(int i=0; i < size/4; i++){
-		char* bin = intToBinaryString(i,BITWIDTH);
+		char* bin = intToBinaryString(i,BITWIDTH); //fill bin with sequentially
 		fprintf(fp,"%s\n",bin);
 		free(bin);
 		}
@@ -85,20 +87,21 @@ void badTrace(int size){
 }
 
 
-// Generaetes a single value, over and over again.
-// This is the most basic trace file.
+// Generaetes a single value, for the first half and second again.
+// Takes in 3 arguments, size and 2 values
+// Value is filled for first half of size and value2 is filled for second half
 void goodTrace(int size, int value, int value2){
 	FILE* fp = fopen("goodTrace.txt","w");
 
 	srand(time(NULL));
 
-	for(int i=0; i < size/2; i++){
+	for(int i=0; i < size/2; i++){      //fill bin for first half of size
 		char* bin = intToBinaryString(value,BITWIDTH);
 		fprintf(fp,"%s\n",bin);
 		free(bin);
 	}
 
-	for(int i=size/2; i < size; i++){
+	for(int i=size/2; i < size; i++){  //fill bin for second half of size 
 		char* bin = intToBinaryString(value2,BITWIDTH);
 		fprintf(fp,"%s\n",bin);
 		free(bin);
@@ -151,8 +154,8 @@ int main(){
 	randomTrace(ADDRESSES,RANGE);
 	realisticTrace(ADDRESSES,RANGE);
 	singleTrace(ADDRESSES,42);
-	goodTrace(ADDRESSES,64,128);
-	badTrace(ADDRESSES); 
+	goodTrace(ADDRESSES,64,128); //call new user functions
+	badTrace(ADDRESSES);         //call new user functions
 
 	// Some unit tests for the binary conversions if you want
 	// to play around with larger sets.
