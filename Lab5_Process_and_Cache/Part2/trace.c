@@ -68,13 +68,51 @@ void singleTrace(int size, int value){
 }
 
 
+
+// Generaet a random data access pattern
+void badTrace(int size){
+	FILE* fp = fopen("badTrace.txt","w");
+
+	srand(time(NULL));
+	for(int j = 0; j < 4; j++){
+	for(int i=0; i < size/4; i++){
+		char* bin = intToBinaryString(i,BITWIDTH);
+		fprintf(fp,"%s\n",bin);
+		free(bin);
+		}
+	}
+	fclose(fp);
+}
+
+
+// Generaetes a single value, over and over again.
+// This is the most basic trace file.
+void goodTrace(int size, int value, int value2){
+	FILE* fp = fopen("goodTrace.txt","w");
+
+	srand(time(NULL));
+
+	for(int i=0; i < size/2; i++){
+		char* bin = intToBinaryString(value,BITWIDTH);
+		fprintf(fp,"%s\n",bin);
+		free(bin);
+	}
+
+	for(int i=size/2; i < size; i++){
+		char* bin = intToBinaryString(value2,BITWIDTH);
+		fprintf(fp,"%s\n",bin);
+		free(bin);
+	}
+	
+	fclose(fp);
+}
+
 // Generate a more realistic data access pattern
 // This will generate addresses that may repeat over time
 void realisticTrace(int size, int range){
 	FILE* fp = fopen("realistic.txt","w");
 
 	srand(time(NULL));
-
 
 	for(int i=0; i < size;){
 
@@ -113,6 +151,8 @@ int main(){
 	randomTrace(ADDRESSES,RANGE);
 	realisticTrace(ADDRESSES,RANGE);
 	singleTrace(ADDRESSES,42);
+	goodTrace(ADDRESSES,64,128);
+	badTrace(ADDRESSES); 
 
 	// Some unit tests for the binary conversions if you want
 	// to play around with larger sets.
