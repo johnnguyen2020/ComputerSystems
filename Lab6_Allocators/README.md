@@ -67,6 +67,8 @@ Take a moment to read the Cexcerpt.pdf (2 pages ~5 minutes reading) to get a bas
 For  each machine there is a restrictive type htat constrians what can be stored at a particular adress. 
 The Align keyword forces each header to be aligned in this aforementioned type, where if the heap can fit a long then it can fit any type.'
 
+For  each machine there is a restrictive type htat constrians what can be stored at a particular adress. The Align keyword forces each header to be aligned in this aforementioned type, where if the heap can fit a long then it can fit any type.'
+
 ## Part 3 - Allocator building blocks
 
 A few of the key system calls that we will need to understand are the following (My professors use to always say "read the man pages", so I will echo that in honor of them).
@@ -104,6 +106,8 @@ What do you think mlock is good for? This article discusses some of the tradeoff
 **Discuss** with your partner.
 
 **Write a 1-2 sentence answer here:**
+
+Part3: mlock locks pages of memory to the RAM which is useful for security/privavy in sensitive decrypted data and additionally for programs with real time constraints. Moving this data to RAM as opposed to swap prevents hackers from accesssing the data in the case the system shuts down and data is stuck on the disk where it is easily accessible by another  party. 
 
 ## Part 4 - The simplest memory allocator
 
@@ -151,9 +155,13 @@ However, the problem with this allocator is that we do not have any notion over 
 
 **Write a 1-2 sentence answer here:**
 
+Part4: Some possible solutions are a linked list and a hash tabe. A linked list would be preferable due to its sequential logic.
+
 **Discuss** with your partner, do you think you will be able to use valgrind to monitor your custom memory allocator to detect potential memory leaks? 
 
 **Write a 1-2 sentence answer here:**
+
+Valgrind will not be able to monitor my custome memory allocator since Valgrind works by detecting every malloc call. In this case, Valgrind would not be able to recognize a user definition of malloc. However there is a method to make synonyms to malloc in order to be able to run Valgrind for memory leak detection
 
 ## Part 5 - strace
 
@@ -176,6 +184,8 @@ DESCRIPTION
 **Discuss** with your partner how many 'sbrk' system calls you see, and write your answer below.
 
 **Write a 1-2 sentence answer here:**
+
+Part5: 2 brk(null) and 1 brk()  for each mymalloc if brk is NULL then it goes to end of the heap unless brk() is specified a value then it increases the end of the heap by the given adress size. brk(0) finds the current location of the heap pointer which is the end of the heap
 
 ## Lab Deliverable
 
