@@ -2,14 +2,13 @@
 
 TODO Please edit the following information in your assignment
 
-- Did you implement a best-fit or first-fit allocator?
+- Did you implement a best-fit or first-fit allocator? Best fit
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: John Nguyen
+- How many hours did it take you to complete this assignment? 20
+- Did you collaborate with any other students/TAs/Professors? 
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd  
+  - https://danluu.com/malloc-tutorial/ 
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
