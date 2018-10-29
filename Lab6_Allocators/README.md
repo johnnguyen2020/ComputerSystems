@@ -64,6 +64,8 @@ Take a moment to read the Cexcerpt.pdf (2 pages ~5 minutes reading) to get a bas
 **Discuss:** with your partner and write why you think `typedef long Align` was used. 
 
 **Write a 1-2 sentence answer here:**
+For  each machine there is a restrictive type htat constrians what can be stored at a particular adress. 
+The Align keyword forces each header to be aligned in this aforementioned type, where if the heap can fit a long then it can fit any type.'
 
 ## Part 3 - Allocator building blocks
 
