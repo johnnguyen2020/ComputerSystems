@@ -65,7 +65,7 @@ Take a moment to read the Cexcerpt.pdf (2 pages ~5 minutes reading) to get a bas
 
 **Write a 1-2 sentence answer here:**
 
-For each machine there is a restrictive type that constrians what can be stored at a particular adress. Unions in C can store different data types in the same memory location can be defined with multiple data members but only one member can contain a value at any given time. Thus, the Union structure needs to be allocated to accommodate the worst-case (largest size) data member that it could store a value for, which in the example given in the excerpt is a long. The Align keyword thus handles the alignment of the blocks in memory as being able to accomodate long type data.
+For each machine there is a restrictive type that constrians what can be stored at a particular adress. Unions in C can store different data types in the same memory location which can be defined with multiple data members but only one member can contain a value at any given time. Therfore they need to be allocated to accommodate the worst-case data member that it could store a value for, which is a long, the largest data size. Align keyword handles long type datah and the alignment of the blocks in memory.
 
 
 ## Part 3 - Allocator building blocks
