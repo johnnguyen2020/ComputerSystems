@@ -64,10 +64,9 @@ Take a moment to read the Cexcerpt.pdf (2 pages ~5 minutes reading) to get a bas
 **Discuss:** with your partner and write why you think `typedef long Align` was used. 
 
 **Write a 1-2 sentence answer here:**
-For  each machine there is a restrictive type htat constrians what can be stored at a particular adress. 
-The Align keyword forces each header to be aligned in this aforementioned type, where if the heap can fit a long then it can fit any type.'
 
-For  each machine there is a restrictive type htat constrians what can be stored at a particular adress. The Align keyword forces each header to be aligned in this aforementioned type, where if the heap can fit a long then it can fit any type.'
+For each machine there is a restrictive type that constrians what can be stored at a particular adress. Unions in C can store different data types in the same memory location can be defined with multiple data members but only one member can contain a value at any given time. Thus, the Union structure needs to be allocated to accommodate the worst-case (largest size) data member that it could store a value for, which in the example given in the excerpt is a long. The Align keyword thus handles the alignment of the blocks in memory as being able to accomodate long type data.
+
 
 ## Part 3 - Allocator building blocks
 
@@ -107,7 +106,7 @@ What do you think mlock is good for? This article discusses some of the tradeoff
 
 **Write a 1-2 sentence answer here:**
 
-Part3: mlock locks pages of memory to the RAM which is useful for security/privavy in sensitive decrypted data and additionally for programs with real time constraints. Moving this data to RAM as opposed to swap prevents hackers from accesssing the data in the case the system shuts down and data is stuck on the disk where it is easily accessible by another  party. 
+Mlock locks pages of memory to the RAM which is useful for security/privavy in sensitive decrypted data and additionally for programs with real time constraints. Moving this data to RAM as opposed to swap prevents hackers from accesssing the data in the case the system shuts down and data is stuck on the disk where it is easily accessible by an outside party. 
 
 ## Part 4 - The simplest memory allocator
 
@@ -155,13 +154,13 @@ However, the problem with this allocator is that we do not have any notion over 
 
 **Write a 1-2 sentence answer here:**
 
-Part4: Some possible solutions are a linked list and a hash tabe. A linked list would be preferable due to its sequential logic.
+Some possible solutions are a linked list and a hash tabe. A linked list would be preferable due to its sequential logic.
 
 **Discuss** with your partner, do you think you will be able to use valgrind to monitor your custom memory allocator to detect potential memory leaks? 
 
 **Write a 1-2 sentence answer here:**
 
-Valgrind will not be able to monitor my custome memory allocator since Valgrind works by detecting every malloc call. In this case, Valgrind would not be able to recognize a user definition of malloc. However there is a method to make synonyms to malloc in order to be able to run Valgrind for memory leak detection
+Valgrind will not initially be able to monitor my custome memory allocator since Valgrind works by detecting every malloc call and in this case, Valgrind would not be able to recognize a user definition of malloc. However there is a method to make synonyms to malloc in order to be able to run Valgrind for memory leak detection which is achieved thorugh redefining the call to malloc in the standard library to mymalloc instead. 
 
 ## Part 5 - strace
 
@@ -185,7 +184,7 @@ DESCRIPTION
 
 **Write a 1-2 sentence answer here:**
 
-Part5: 2 brk(null) and 1 brk()  for each mymalloc if brk is NULL then it goes to end of the heap unless brk() is specified a value then it increases the end of the heap by the given adress size. brk(0) finds the current location of the heap pointer which is the end of the heap
+Part5: 2 brk(null) and 1 brk() for each mymalloc if brk is NULL then it goes to end of the heap unless brk() is specified a value then it increases the end of the heap by the given adress size. brk(0) finds the current location of the heap pointer which is the end of the heap. 3 brk for each malloc and one initially results in 25 sbrk system calls.
 
 ## Lab Deliverable
 
