@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <stdio.h>
 
+//Data struct to hold block info
 struct block{
     size_t size;
     struct block *next;
@@ -15,7 +16,7 @@ typedef struct block block_t; //defined variable type
 void *global_base = NULL;               //head for linked list
 
 /*
-//function finds available free space, the allocate space if not possible
+//first fit function to find available free space, the allocate space if not possible
 //returns pointer to current start of region on heap
 block_t *find_free_block(block_t **last, size_t size) {
     block_t *current = global_base;
@@ -42,15 +43,15 @@ block_t *find_free_block(block_t **block, size_t size){
                 tempBlock = currentBlock;                   //there is a better fit                                     
             }                     
         }    
-        *block = currentBlock;  //continue loop to end of segment             
-        currentBlock = currentBlock->next;
+        *block = currentBlock;              //continue loop to end of segment             
+        currentBlock = currentBlock->next;  //advance linked list node 
     }  
 
     if (tempBlock == NULL){   //logic to return best fit for mymalloc
         return currentBlock; 
     }
     else{
-        return tempBlock; 
+        return tempBlock; //return start of best fit data segment pointer
     }
 }
 
@@ -67,15 +68,15 @@ block_t *request_space(block_t* last, size_t size) {
     if (last) { // NULL on first request.
         last->next = block;
     }
-    block->size = size;
-    block->next = NULL;
-    block->free = 0;
+    block->size = size; //reallocate size
+    block->next = NULL; //point to NULL
+    block->free = 0;    //set not free 
     return block;
 }
 
 //mymalloc uses helper functions to check and request space
 void *mymalloc(size_t size) {
-      //printf("%zu \n", size);
+      //printf("malloc %zu bytes \n", size);
       block_t *block; 
       if (size <= 0) {
               return NULL;                
@@ -118,16 +119,19 @@ void myfree(void * ptr){
         return; //free can be called on NULL but program just returns
     }
     block_t* block_ptr = get_block_ptr(ptr);
+    //printf("freed %zu bytes \n", block_ptr->size); 
     block_ptr->free = 1;
 }
 
 //takes in number elements to allocate and size of each element
 //Iniltializes all of elements bits to 0
 void *mycalloc(size_t nmemb, size_t size){
-    size_t s = nmemb * size;
-    void *ptr = mymalloc(s);
-    memset(ptr, 0 , s);
-    return ptr;
+    //printf("calloc %zu bytes \n", size);
+    size_t total = nmemb * size; //find size of data segment
+    void *ptr = mymalloc(total); //allocate space
+    memset(ptr, 0 , total);      //set memory to 0 of size argument
+    //printf("calloc %zu bytes \n", total);
+    return ptr;              //return current block pointer
 }
 
 
