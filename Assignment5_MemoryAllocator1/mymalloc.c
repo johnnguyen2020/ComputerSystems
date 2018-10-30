@@ -76,7 +76,7 @@ block_t *request_space(block_t* last, size_t size) {
 
 //mymalloc uses helper functions to check and request space
 void *mymalloc(size_t size) {
-      //printf("malloc %zu bytes \n", size);
+      printf("malloc %zu bytes \n", size);
       block_t *block; 
       if (size <= 0) {
               return NULL;                
@@ -103,10 +103,9 @@ void *mymalloc(size_t size) {
             block->free = 0;
         }           
     }
-    printf("%p \n", block);
+    //printf("%p \n", block);
     return(block+1); //Return pointer to region after meta info
 }
-
 
 //data type to return address of block_t ptr
 block_t *get_block_ptr(void *ptr){
@@ -119,18 +118,18 @@ void myfree(void * ptr){
         return; //free can be called on NULL but program just returns
     }
     block_t* block_ptr = get_block_ptr(ptr);
-    //printf("freed %zu bytes \n", block_ptr->size); 
+    printf("freed %zu bytes \n", block_ptr->size); 
     block_ptr->free = 1;
 }
 
 //takes in number elements to allocate and size of each element
 //Iniltializes all of elements bits to 0
 void *mycalloc(size_t nmemb, size_t size){
-    //printf("calloc %zu bytes \n", size);
     size_t total = nmemb * size; //find size of data segment
     void *ptr = mymalloc(total); //allocate space
     memset(ptr, 0 , total);      //set memory to 0 of size argument
-    //printf("calloc %zu bytes \n", total);
+    printf("calloc %zu bytes \n", total);
+    //printf("calloc %p bytes \n", ptr);
     return ptr;              //return current block pointer
 }
 

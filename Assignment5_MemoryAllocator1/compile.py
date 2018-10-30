@@ -10,9 +10,10 @@ os.system('clang tests/test4.c -o tests/test3')
 # Make sure my tests do not have memory leaks
 # Valgrind also has helpful information
 # about how many allocs and frees took place
-# os.system('valgrind ./tests/test1')
-# os.system('valgrind ./tests/test2')
-# os.system('valgrind ./tests/test3')
+os.system('valgrind ./tests/test1')
+os.system('valgrind ./tests/test2')
+os.system('valgrind ./tests/test3')
+os.system('valgrind ./tests/test4')
 
 # Compile our malloc program
 os.system('clang -c mymalloc.c')
