@@ -1,0 +1,20 @@
+======================================================================
+PART 1
+======================================================================
+
+>>>>> Parse the command <<<<<
+parse the command - success
+
+======================================================================
+PART 2
+======================================================================
+
+>>>>> Spawn the shell <<<<<
+Traceback (most recent call last):
+  File "../../Assignment4_Tests/2.2.py", line 41, in <module>
+    child = pexpect.spawn('./shell')
+  File "/usr/lib/python2.7/site-packages/pexpect/pty_spawn.py", line 204, in __init__
+    self._spawn(command, args, preexec_fn, dimensions)
+  File "/usr/lib/python2.7/site-packages/pexpect/pty_spawn.py", line 276, in _spawn
+    'executable: %s.' % self.command)
+pexpect.exceptions.ExceptionPexpect: The command was not found or was not executable: ./shell.
