@@ -3,7 +3,8 @@ PART 1
 ======================================================================
 
 >>>>> Parse the command <<<<<
-parse the command - success
+parse the command - failed 
+
 
 ======================================================================
 PART 2
@@ -11,7 +12,7 @@ PART 2
 
 >>>>> Spawn the shell <<<<<
 Traceback (most recent call last):
-  File "../../Assignment4_Tests/2.2.py", line 41, in <module>
+  File "../../Assignment4_Tests/2.2.py", line 42, in <module>
     child = pexpect.spawn('./shell')
   File "/usr/lib/python2.7/site-packages/pexpect/pty_spawn.py", line 204, in __init__
     self._spawn(command, args, preexec_fn, dimensions)
