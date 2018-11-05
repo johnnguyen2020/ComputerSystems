@@ -7,7 +7,7 @@ parse : parse.c
 	$(CC) $(CCFLAGS) -o parse $<
 
 shell : shell.c
-	$(CC) -o shell $<
+	$(CC) $(CCFLAGS) -o shell $<
 
 run : parse shell
 	ls parse shell
