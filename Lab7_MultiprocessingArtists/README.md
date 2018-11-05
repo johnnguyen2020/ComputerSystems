@@ -28,7 +28,7 @@ Let us see how parallel we can get (i.e. how many artists) by analyzing our mach
   - (The last time I checked there are 8 cpu cores available on 30+ machines. It may be convenient for us to work in multiples of 8 then, which we can always increase later).
   
 **Discuss with your partner:** (And write 1 sentence about your findings here)
-
+Information shows how many CPUs there are
 ### Task 2 - fork() parallelism
 
 We have worked with fork() before, but now we are going to take a look at how it could support parallelism. Let us now think about how we can spawn multiple processes from the same program.
@@ -89,7 +89,7 @@ Let us modify our Task 2:
   - Where are we forgetting to reclaim our memory?
 
 **Discuss with your partner:** (And write 1 sentence about where you think we are forgetting to reclaim memory)
-
+The problem is that we arent trying to reclaim anywhere besides on the main process. so if a child comes after the main, then the memory isnt free thus the order does matter.
 ### Task 4 - Synchronization with fork()
 
 Have you been noticing that anything weird happens if you run your program enough times? It is possible that not all of your proceses are running, and they may not be running quite in order?
