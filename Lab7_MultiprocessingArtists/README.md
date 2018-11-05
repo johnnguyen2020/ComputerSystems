@@ -28,6 +28,9 @@ Let us see how parallel we can get (i.e. how many artists) by analyzing our mach
   - (The last time I checked there are 8 cpu cores available on 30+ machines. It may be convenient for us to work in multiples of 8 then, which we can always increase later).
   
 **Discuss with your partner:** (And write 1 sentence about your findings here)
+
+The command shows in text all the cpu info, the information being pulled is highlighted/searched by the key term "cpu cores". There are 32 machines and each machine has 8 cores.
+
 Information shows how many CPUs there are
 ### Task 2 - fork() parallelism
 
@@ -90,6 +93,9 @@ Let us modify our Task 2:
 
 **Discuss with your partner:** (And write 1 sentence about where you think we are forgetting to reclaim memory)
 The problem is that we arent trying to reclaim anywhere besides on the main process. so if a child comes after the main, then the memory isnt free thus the order does matter.
+
+Valgrind is a  useful tool for freeing memory after allocating and the problem was that it doesnt free children. We need additional frees for our child process since memory is not  completely shared.  When fork is called, memory is allocated but if there is never a call to exec then the process is never exited and the memory for the process isn't freed which valgrind detects.
+
 ### Task 4 - Synchronization with fork()
 
 Have you been noticing that anything weird happens if you run your program enough times? It is possible that not all of your proceses are running, and they may not be running quite in order?
@@ -126,6 +132,8 @@ Let us now have our artists work on one giant masterpiece (as originally intende
 - Next, read the man page for vfork(`man vfork`)
 
 **Discuss with your partner:** (And write 1 sentence about the difference between fork and vfork)
+
+Vfork is similar in that it creates a child process but it creates processes wothout copying the page tables of the parent process. this lightweight version has a calling thread that is suspended until the child is terminated and until that point the child shares all memory ith its parent including the stack and wherareas fork doesnt include the virtual address space. the entire address space is shared (i.e. all mememory is shared, including the stack, and we can access the data from every vfork'ed process). Lastly, we do not need to 'wait' since the parent will execute after the child from vfork has terminated. Vfork shares the stack, which is not true of threads which have their own stack.
 
 Scroll down a bit to see the answers after reading the man page.
 
@@ -329,6 +337,7 @@ Once again, Michaelangelo, Rapheal, Donatello, and Leonardo are amongst 64 great
 
 **Discuss with your partner:** (And write 1 sentence if you think you need to use locks anywhere in this solution)
 
+ Locks should be used within the paint function so that the artists do not try to access shared memory space which could result in a data race This occurs when two or more concurrent threads simultaneously execute this critical section and will result in color glitches the color array.
 
 (Here is a quite reminder below of using threads for your reference.)
 
