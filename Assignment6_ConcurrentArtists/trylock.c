@@ -31,13 +31,13 @@ int main(){
 
     // Store two thread ids
     pthread_t tids[NTHREADS];
-
-    for(int steps =0; steps < 10; ++steps){
-        for(int i = 0; i < NTHREADS; ++i){
+    int i, steps;
+    for(steps =0; steps < 10; ++steps){
+        for(i = 0; i < NTHREADS; ++i){
             pthread_create(&tids[i],NULL,(void*)thread,NULL);
         }
 
-        for(int i = 0; i < NTHREADS; ++i){
+        for(i = 0; i < NTHREADS; ++i){
             pthread_join(tids[i],NULL);
         }
     }

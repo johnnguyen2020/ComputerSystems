@@ -11,6 +11,9 @@
 #define CANVAS_WIDTH 256
 #define CANVAS_HEIGHT 256
 
+// Initialize new mutex lock
+pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
+
 // Our canvas is a shared piece of memory that each artist can access.
 // Within our canvas, every pixel has a red, green, and blue component.
 // Because we only want one artist at a time drawing on a pixel
@@ -122,15 +125,19 @@ void* paint(void* args){
         // at first glance this seems okay, but convince yourself
         // we can still have data races.
         // I suggest investigating a 'trylock'
- 
+       
         // Try to paint
         // paint the pixel if it is white.
         if( canvas[painter->x][painter->y].r == 255 &&
             canvas[painter->x][painter->y].g == 255 &&
             canvas[painter->x][painter->y].b == 255){
-                canvas[painter->x][painter->y].r = painter->r;
-                canvas[painter->x][painter->y].g = painter->g;
-                canvas[painter->x][painter->y].b = painter->b;
+                if(pthread_mutex_trylock(&canvas[painter->x][painter->y].lock) == 0){ 
+                    canvas[painter->x][painter->y].r = painter->r;
+                    canvas[painter->x][painter->y].g = painter->g;
+                    canvas[painter->x][painter->y].b = painter->b;
+                    pthread_mutex_unlock(&canvas[painter->x][painter->y].lock);
+
+                }       
         }else{
         // If we cannot paint the pixel, then we backtrack
         // to a previous pixel that we own.
@@ -194,10 +201,17 @@ int main(){
 	pthread_create(&Leonardo_tid,NULL,(void*)paint,Leonardo);
 
     // TODO: Add 50 more artists 
-    // int rookieArtists = 50;
-    // pthread_t moreArtists_tid[rookieArtists];
-	// artist_t* moreArtists = malloc(..);
-    // for(int i =0; i < rookieArtists; ++i){
+    int rookieArtists = 50;
+    pthread_t moreArtists_tid[rookieArtists];
+	artist_t* moreArtists = (artist_t*) malloc(rookieArtists * sizeof(artist_t));
+    for(int i =0; i < rookieArtists; ++i){
+	    moreArtists[i].x = rand()%(CANVAS_WIDTH-1);
+	    moreArtists[i].y = rand()%(CANVAS_HEIGHT-1);
+	    moreArtists[i].r = rand()%255;
+	    moreArtists[i].g = rand()%255;
+	    moreArtists[i].b = rand()%255;
+	    pthread_create(&moreArtists_tid[i],NULL,(void*)paint,&moreArtists[i]);
+    }
 
 	// Join each with the main thread.  
 	// Do you think our ordering of launching each thread matters?
@@ -207,7 +221,9 @@ int main(){
 	pthread_join(Leonardo_tid, NULL);		   
 
     // TODO: Add the join the 50 other artists threads here	
-    // for (...)
+    for(int i =0; i < rookieArtists; ++i){
+	    pthread_join(moreArtists_tid[i],NULL);
+    }
 
     // Save our canvas at the end of the painting session
 	outputCanvas();
@@ -219,6 +235,6 @@ int main(){
     free(Leonardo);
 
     // TODO: Free any other memory you can think of
-
+    free(moreArtists);
 	return 0;
 }
