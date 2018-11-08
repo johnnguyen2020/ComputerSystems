@@ -176,7 +176,7 @@ This means you need to enforce some locking mechanism.
 
 **Discuss(in a few sentences)** how starvation may occur in the above program, and how you would possibly fix it? (You may fix it in your implementation if you like--the art may be more beaufiful!)
 
-*edit and add your response here*
+Starvation may occur when one or multiple threads are denied CPU time when other threads are using it. This occurs in paint function specifically, when a thread starts painting, the code that handles painting is locked and as a result, other threads can't paint at the same time. This prevents two threads painting to the same pixel. However startvation can occur since there are other threads that are locked out of painting more often than others and cannot access the CPU resources. One way to rectify this situation is through implementation of a FIFO ticket lock for the pthread mutexes which ensures a fair queue/waiting mechanism for accessing shared resources.
 
 ## Part 4 - Catch Up
 
@@ -195,7 +195,10 @@ Some tutorial series that look reasonable (you can search around for others):
 	
 **Write a few sentences here:** describing what you got caught up on. If you were caught up on 100% of things, write a few sentences about what new things you sat down and learned for 1-2 hours.
 
-(*write your sentences here, share any tutorials you found*)
+Catch Up - During the begining stages of the course where the semester was a blur, I did not get a good chance to fully digest C and passing by reference versus passing by adress. Some topics I reviewed are pointers, memory aallocation, data structures and the C syntax. As opposoed to other programming languaages, C requires memory management which includes allocation of variables on the heap and de allocation which is accomplished thorugh the free commnand. A useful data structure to illustrate this a linked list. A linked list can use combinatorial and sequential logic to store data into a list structure. This is a dynamic way to create a array and allocate memory accordingly versus initiallizing an array. With linked lists I always emphasize the fundamnetals of pointers and memory addresses and how functions create a copy when passing an argument by reference versus actually manipulating a variable through referencing by address. These are fundamnetals that are difficult to conceptually grasp thus I have included two links below which I found concise and helpful. 
+
+https://phy.ntnu.edu.tw/~cchen/pdf/ctutor.pdf
+http://www.trytoprogram.com/c-programming/ 
 
 ## Rubric
 
