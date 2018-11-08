@@ -3,11 +3,10 @@
 TODO Please edit the following information in your assignment
 
 - Name: John Nguyen
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- How many hours did it take you to complete this assignment? 10
+- Did you collaborate with any other students/TAs/Professors? Durwasa
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  - https://www.cs.rice.edu/~vs3/comp422/lecture-notes/comp422-lec19-s08-v1.pdf
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
