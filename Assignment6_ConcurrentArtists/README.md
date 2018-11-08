@@ -2,7 +2,7 @@
 
 TODO Please edit the following information in your assignment
 
-- Name:
+- Name: John Nguyen
 - How many hours did it take you to complete this assignment?
 - Did you collaborate with any other students/TAs/Professors?
 - Did you use any external resources? (Cite them below)
@@ -176,7 +176,8 @@ This means you need to enforce some locking mechanism.
 
 **Discuss(in a few sentences)** how starvation may occur in the above program, and how you would possibly fix it? (You may fix it in your implementation if you like--the art may be more beaufiful!)
 
-Starvation may occur when one or multiple threads are denied CPU time when other threads are using it. This occurs in paint function specifically, when a thread starts painting, the code that handles painting is locked and as a result, other threads can't paint at the same time. This prevents two threads painting to the same pixel. However startvation can occur since there are other threads that are locked out of painting more often than others and cannot access the CPU resources. One way to rectify this situation is through implementation of a FIFO ticket lock for the pthread mutexes which ensures a fair queue/waiting mechanism for accessing shared resources.
+Starvation may occur when one or multiple threads are denied CPU time when other threads are using it. This occurs in paint function specifically, when a thread starts painting, the code that handles painting is locked and as a result, other threads can't paint at the same time. This prevents two threads painting to the same pixel. However startvation can occur since there are other threads that are locked out of painting more often than others and cannot access the CPU resources. One way to rectify this situation is through implementation of a FIFO ticket lock for the pthread mutexes which ensures a fair queue/waiting mechanism for accessing shared resources and that every thread that attempts to acquire the lock eventually succeeds.
+
 
 ## Part 4 - Catch Up
 
