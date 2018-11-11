@@ -55,7 +55,7 @@ void foo_cd(char *d)                            //Built in command change direct
 		{d = "/home/johnnguyen";}
 	if (chdir(d) != 0)
 		{perror("error");} 
-	free(d);
+	//free(d);
 }
 
 int help(){                                                     //prints help manual
