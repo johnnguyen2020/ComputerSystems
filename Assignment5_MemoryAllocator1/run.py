@@ -15,5 +15,8 @@ os.system('./tests/test2_mymalloc')
 print("Running Test 3 with custom allocator")
 os.system('./tests/test3_mymalloc')
 
+print("Running Test malloc with custom allocator")
+os.system('./tests/test_malloc')
+
 
 
