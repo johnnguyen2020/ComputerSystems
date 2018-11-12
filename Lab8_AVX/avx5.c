@@ -53,7 +53,8 @@ int main(){
 	
 	// Discuss whether this can be a useful function?
 	// Here is one particular domain in which it is used.
-	// Color formats!
+	// This is useful in color manipulation and filters
+    // Color formats!
 	//
 	// Images are often stored in the format RGBA
 	// Where R is red, G green, B is blue, and A is the alpha(transparnecy)
@@ -64,6 +65,7 @@ int main(){
 	// (Discuss): Can you think of other domains in which you may need to 'permute'?
 	// Do you think this instruction would be interesting for companies like Instagram to
 	// create new filters, or remove color?
+    // Yes, it is useful in filters such as binarizing pixels into either black or white
 
 
 	return 0;
