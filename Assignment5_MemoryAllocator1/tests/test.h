@@ -3,7 +3,7 @@
 #define _tst_h_
 
 #ifndef MESSAGE
-#define MESSAGE(foo) fprintf(stderr,"%s, line %d: %s", progname, __LINE__, foo)
+#define MESSAGE(foo) fprintf(stdout,"%s, line %d: %s", progname, __LINE__, foo)
 #endif
 
 #ifndef NULL
