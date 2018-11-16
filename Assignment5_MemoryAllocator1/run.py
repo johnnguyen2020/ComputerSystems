@@ -1,22 +1,27 @@
+import subprocess
+import signal
 import os
 
-# Compile all of our tests to make sure we
-# always run the latest copy.
 os.system('python compile.py')
 
+binaries = [
+    'test1_mymalloc',
+    'test2_mymalloc',
+    'test3_mymalloc',
+    'test_malloc',
+    'static_array_insertion',
+    'binary_tree_test',
+    'test_null'
+]
 
-# Run our malloc on all of the results
-print("Running Test 1 with custom allocator")
-os.system('./tests/test1_mymalloc')
+for f in binaries:
 
-print("Running Test 2 with custom allocator")
-os.system('./tests/test2_mymalloc')
+    print "running tests ... >>",f
 
-print("Running Test 3 with custom allocator")
-os.system('./tests/test3_mymalloc')
+    args = ["./tests/{}".format(f)]
+    res = subprocess.Popen(args, shell=True ,stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    output, _err = res.communicate()
 
-print("Running Test malloc with custom allocator")
-os.system('./tests/test_malloc')
-
-
+    print 'segmentation fault' if res.returncode == -signal.SIGSEGV else output
+    print ('\n')
 

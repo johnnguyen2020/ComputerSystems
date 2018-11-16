@@ -40,7 +40,7 @@ int main(int argc, char *argv[]){
   int i = 0 ;
   a = malloc(5);
   start_address = a;
-  for (i = 0 ; i < 1000; i++){
+  for (i = 0 ; i < 10; i++){
     b = malloc(1);
   }
   c = malloc(4);
@@ -89,33 +89,8 @@ int main(int argc, char *argv[]){
   d[0] = d[1] = (double)4711.4711;
   free(d);
 
-  MESSAGE("Allocate and Assert\n");
-  int *t;
-  t = malloc(sizeof(int)*400);
-  t[0] = 12;
-  t[1] = 18;
-  t[2] = 20;
-  t[3] = 24;
-  t[100] = 100;
-  t[200] = 200;
-
-  (t[0] == 12) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-  (t[1] == 18) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-  (t[2] == 20) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-  (t[3] == 24) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-  (t[100] == 100) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-  (t[200] == 200) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-
-  MESSAGE("Allocate Binary Tree\n");
-
-  struct node *root = newNode(1);
-  root->left        = newNode(2);
-  root->right       = newNode(3);
-  root->left->left  = newNode(4);
-
-  (root->left->left->data == 4) ? MESSAGE("ALLOCATE SUCCESS! \n") : MESSAGE("ALLOCATE FAILED! \n");
-
   end_timer();
+
   print_log_timer();
   return 0;
 }
