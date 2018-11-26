@@ -48,6 +48,8 @@ int main(){
 Go ahead and run the program with `./omp1`.
 
 **Discuss with your partner and answer:** *answer in a sentence here, what your output is, and whether you expected it to be as such.*
+The output is 32 "hello worlds" randomnly. The architecture is 32 threads which is consistent with our results since the CCIS servers have 32 CPUS and there is one thread per core.
+
 
 #### Example 2 - For-loops
 
@@ -74,6 +76,8 @@ int main(){
 ```
 
 **Discuss with your partner and answer:** *Why is our output not ordered?*
+parallel omp FOR --> output is not ordered becuase the parallel region uses what ever resources are available. In multithreading, there is no guarentee what order threads will run without assigning priorites and the clause paralleizes the for loop without regard to order
+
 
 #### Example 3 - Synchronization
 
@@ -171,6 +175,7 @@ int fib_recursive(int n){
 Note that you may not see any performance gain--why?
 
 **Discuss with your partner and answer:** *answer in a sentence here, why there may not be any performance gain here*
+In the program we do not see a performance gain since there is a data race occuring since the threads are trying to access the same memory location concurrently. Data race occurs since threads have their own stack in the parallel region but these variables dissapear when a thread finishes which emphasizes the need for variables outside the thread stack to keep track of conditions/variables as well. The taskwait also adds to the performance loss since a thread must wait until for the previous numbers in the sequence to be completed. 
 
 
 #### Example 5 - Computing PI 3.1415....
@@ -207,6 +212,7 @@ Now we are going to try to solve this problem in parallel.
 In general, this is a type of [Reduction](http://www.drdobbs.com/architecture-and-design/parallel-pattern-7-reduce/222000718) algorithm, in that we are chunking our problem and solving pieces of it, and then rebuilding the result.
 
 **Discuss with your partner and answer:** *What is a strategy for solving this problem?*
+To parallelized the pi program programatically, one solution is to eliminate false sharing. We create a 2D array for the sums where the dimensions are the NUM_THREADS by PAD since the PAD represents the number of double precision words per each cache line. This guarentees that each element in the sum array is sitting on a different cache element. Then we can sum all the elements in the array outside the parallel construct.
 
 **Now implement in omp5.c your strategy:** Note: You can revisit [Tim Mattson's video](https://www.youtube.com/watch?v=OuzYICZUthM&list=PLLX-Q6B8xqZ8n8bwjGdzBJ25X2utwnoEG&index=7) if you get stuck.
 
