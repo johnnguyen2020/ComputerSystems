@@ -1,38 +1,35 @@
-// gcc -std=c99 -fopenmp omp5.c -o omp5
-// You fill in
-
 // gcc -std=c11 -fopenmp omp5.c -o omp5
 #include <stdio.h>
 #include <omp.h>
-
+#define PAD 8
+#define NUM_THREADS 2
 
 static long num_steps = 100000;
 double step;
-#define NUM_THREADS 2
 
 int main(){
-  double pi = 0.0;
-  int nthreads;
+  int i, nthreads;
+  double pi, sum[NUM_THREADS][PAD];
   step = 1.0/(double)num_steps;
   omp_set_num_threads(NUM_THREADS);
 
   #pragma omp parallel
   {
-    int i,id,nthrds;
-    double x,sum;
-    id = omp_get_thread_num();
-    nthrds = omp_get_num_threads();
-    //if(id == 0) nthreads = nthrds;
-    id = omp_get_thread_num();
-    nthrds = omp_get_num_threads();
-    for(i = id, sum = 0.0; i < num_steps; i=i + nthrds){
-        x = (i+0.5)*step;
-        sum += 4.0/(1.0+x*x);
-    }
-    #pragma omp critical 
-        pi += step * sum;
+      int i,id,nthrds;
+      double x;
+      id = omp_get_thread_num();
+      nthrds = omp_get_num_threads();
+      if(id==0) nthreads = nthrds;
+
+    for(i =id,sum[id][0]= 0.0; i < num_steps; i = i+nthrds){
+    x = (i+0.5)*step;
+    sum[id][0] += 4.0/(1.0+x*x);
   }
-  
+  }
+  for(i=0, pi = 0.0; i<nthreads; i++){
+    pi += step * sum[i][0];
+  }
   printf("PI = %f\n", pi);
+ 
   return 0;
 }
