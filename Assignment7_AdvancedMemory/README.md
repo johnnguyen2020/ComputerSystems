@@ -4,12 +4,11 @@
 
 TODO Please edit the following information in your assignment
 
-- Name:
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
+- Name: John Nguyen
+- How many hours did it take you to complete this assignment? 30
+- Did you collaborate with any other students/TAs/Professors? Duwasa, Ray Trebicka, Ron Sharma, Billy Xu
 - Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+  - https://danluu.com/malloc-tutorial/
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
