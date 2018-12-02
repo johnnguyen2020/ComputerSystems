@@ -30,6 +30,7 @@ Remember the `grep` command? (`man grep`) It is a handy way to search text, and 
 3. Note that is not quite as many as we have available in Unix--but it is a start!
 
 **Discuss with your partner:** *List five commands you observe with your partner that look familiar from Unix*
+cat, echo, grep, mkdir, ls
 
 # Part 3 - Extending xv6
 
@@ -86,6 +87,9 @@ int main(int argc, char *argv[]){
 - *In a sentence, what does types.h contain?*
 - *In a sentence, what does stat.h contain?*
 - *In a sentence, what does user.h contain? What lists of functions seem particularly interesting/useful?*
+types.h- contains aliases/typedefs for uint, ushort, uchar 
+stat.h- contains definitions for constants and data structure for stat type
+user.h- contains system command prototypes and functions for c language
 
 
 # Part 5 - Implementing a System Call (Extending xv6 further).
@@ -197,9 +201,8 @@ Take a look at some of the source code for programs like wc.c or cat.c.
 
 **Discuss with your partner**: *In pseudo-code below, sketch out how you would implement cp.c*
 
-```
-// your pseudo-code here
-```
+for cp.c I would first open the first argument which is the source file use file buffer I/O to read in a file line by line ir char by char into a buffer and then rename the file to the seccond argument of the destination file
+
 
 ## Lab Deliverable
 
