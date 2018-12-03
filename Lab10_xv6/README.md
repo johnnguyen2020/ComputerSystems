@@ -209,10 +209,10 @@ cp.c pseudo-code implementation
     file2 = fopen(filename, "write"); 
 
     content = fgetc(file1); 
-    while (c != EndOfFile) 
+    while (content != EndOfFile) 
     { 
-        fputc(contents, file2); 
-        contents = fgetc(file1); 
+        fputc(content, file2); 
+        content = fgetc(file1); 
     } 
   
     fclose(file1); 
