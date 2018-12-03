@@ -206,7 +206,7 @@ for cp.c I would first open the first argument which is the source file use file
 cp.c pseudo-code implementation
 
     file1 = fopen(filename, "read"); 
-    filer2 = fopen(filename, "write"); 
+    file2 = fopen(filename, "write"); 
 
     content = fgetc(file1); 
     while (c != EndOfFile) 
