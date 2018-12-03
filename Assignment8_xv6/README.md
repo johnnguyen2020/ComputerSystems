@@ -4,7 +4,7 @@
 
 TODO Please edit the following information in your assignment
 
-- Name:
+- Name: John Nguyen
 - How many hours did it take you to complete this assignment?
 - Did you collaborate with any other students/TAs/Professors?
 - Did you use any external resources? (Cite them below)
@@ -39,23 +39,24 @@ Processes:
 
 ### Processes
 
-1. In which file does the the process table exist? *your answer here*
-2. What is the struct name of the process table? *your answer here*
-3. When there is a context switch from one process to another, where are the values of the registers of the old process saved? *your answer here*
+1. In which file does the the process table exist? proc.c
+2. What is the struct name of the process table? proc ptable
+3. When there is a context switch from one process to another, where are the values of the registers of the old process saved? Contexts are stored at the bottom of the stack they descrobe by the stack pointer which holds the address of the contect. These registers are edi, esi,ebx, ebp,eip
+
 4. What are the 6 possible states of a process?  Also, give a brief phrase describing the purpose of each state.
-	1. *your answer here*
-	2. *your answer here*
-	3. *your answer here*
-	4. *your answer here*
-	5. *your answer here*
-	6. *your answer here*
-5. What is the function that does a context switch between two processes? *your answer here*
-6. Explain how the context switch function works (Note, this "function" *may* be in an assembly file). *your answer here*
+	1. Unused
+	2. Embryo
+	3. Sleeping
+	4. Runnable
+	5. Running
+	6. Zombie
+5. What is the function that does a context switch between two processes? swtch
+6. Explain how the context switch function works (Note, this "function" *may* be in an assembly file). The program saves the current registers on the stack, creates a struct context and saves address in old pointer. Switch stacks to new and pop previously saved registers
 
 ### Process Startup and running
 
-1. What function from 'main.c' creates the first user process? *your answer here*
-2. Where do we actually start running processes in our code? That is, what is the actual function that has an infinite loop for running processes? *your answer here*
+1. What function from 'main.c' creates the first user process? userinit()
+2. Where do we actually start running processes in our code? That is, what is the actual function that has an infinite loop for running processes? scheduler()
 
 ### Files and File Descriptors:
 
@@ -66,16 +67,16 @@ offset into the file), to the i-node. Note: What I call a "file handle", UNIX xv
 
 1.  The function 'sys_open()' returns a file descriptor 'fd'. To do this, it opens a new file handle 'filealloc()', and it allocates a new file descriptor with 'fdalloc()'. Where is the file descriptor allocated?  
 	- Hint: You will see that the file descriptor is one entry in an array in an important struture you have already looked at.
-	- *your answer here*
+	- sysfile.c
 2. What is the algorithm used to choose which entry in the array to use for the new file descriptor?
     	- Note: The name 'NOFILE' means "file number".  "No." is sometimes used as an abbreviation for the word "number".
-	- *your answer here*
+	- Scheduling Algorithm
 3.  As you saw above, the file descriptor turned out to be an index in an array.  What is the name of the array for which the file descriptor is an index?  Also, what is the type of one entry in that array.
-	- *your answer here*
+	- curproc
 4.  The type that you saw in the above question is what I was calling a "file handle" (with an offset into the file, etc.). What is the name of the field that holds the offset into the file? We saw it in the function 'sys_open()' (*hint, it's towards the bottom of the function*).
-	- *your answer here*
+	- FD_INODE
 5.  The file handle type was initialized to 'FD_INODE' in the sys_open function.  What are the other types that it could have been initialized to (*hint, look for the file struct*)?
-	- *your answer here*
+	- T_DIR
     
 # Part 2 - Proc Priority modification
 
