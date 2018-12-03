@@ -201,7 +201,22 @@ Take a look at some of the source code for programs like wc.c or cat.c.
 
 **Discuss with your partner**: *In pseudo-code below, sketch out how you would implement cp.c*
 
-for cp.c I would first open the first argument which is the source file use file buffer I/O to read in a file line by line ir char by char into a buffer and then rename the file to the seccond argument of the destination file
+for cp.c I would first open the first argument which is the source file use file buffer I/O to read in a file line by line ir char by char into a buffer and then rename the file to the seccond argument of the destination file.
+
+cp.c pseudo-code implementation
+
+    file1 = fopen(filename, "read"); 
+    filer2 = fopen(filename, "write"); 
+
+    content = fgetc(file1); 
+    while (c != EndOfFile) 
+    { 
+        fputc(contents, file2); 
+        contents = fgetc(file1); 
+    } 
+  
+    fclose(file1); 
+    fclose(file2); 
 
 
 ## Lab Deliverable
