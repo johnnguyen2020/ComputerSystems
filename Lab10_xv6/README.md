@@ -92,7 +92,7 @@ int main(int argc, char *argv[]){
 
 2. stat.h contains definitions for constants and data structure for stat type used for storing data members
 
-3. user.h- contains system command prototypes and functions for c language/ calls available in ulib.c
+3. user.h- contains system command prototypes and functions for c language/ calls available in ulib.c which are usesful for program functionality
 
 
 # Part 5 - Implementing a System Call (Extending xv6 further).
@@ -206,20 +206,39 @@ Take a look at some of the source code for programs like wc.c or cat.c.
 
 for cp.c I would first open the first argument which is the source file use file buffer I/O to read in a file line by line ir char by char into a buffer and then rename the file to the seccond argument of the destination file.
 
-cp.c pseudo-code implementation
+cp.c pseudo-code implementation 
 
-    file1 = fopen(filename, "read"); 
-    file2 = fopen(filename, "write"); 
+//Copy argument 1 to argument 2
+int main(int argc, char* argv[]) {
 
-    content = fgetc(file1); 
-    while (content != EndOfFile) 
-    { 
-        fputc(content, file2); 
-        content = fgetc(file1); 
-    } 
-  
-    fclose(file1); 
-    fclose(file2); 
+int fdSrc; // Source file
+fdDest; // Destination file
+nbRead; // Content read from source 
+nbWrite // Content written to dest
+char *buffer[size_of_buffer] // Buffer
+
+//Error if the the file can't be opened
+if((fdSrc = open(second argument from command line, is read only)) == -1);
+    return error;
+
+// Open destination file
+destFD = open(third argument from command line as write only);
+
+// Write from source file to the destination file
+while((nbread = read(source file, buffer pointer, size_of_buffer) > 0) {
+    nbWrite = write(destination file, buffer pointer, nbread);
+}
+
+// Check for error from being unable to read source file
+if(nbread == -1) return error;
+
+// Close the source and destination files
+if(close(fdSrc) == -1 || close(fdDest) == -1) 
+    return error;
+
+return 0;
+}
+
 
 
 ## Lab Deliverable
