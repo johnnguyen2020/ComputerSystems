@@ -87,9 +87,12 @@ int main(int argc, char *argv[]){
 - *In a sentence, what does types.h contain?*
 - *In a sentence, what does stat.h contain?*
 - *In a sentence, what does user.h contain? What lists of functions seem particularly interesting/useful?*
-types.h- contains aliases/typedefs for uint, ushort, uchar 
-stat.h- contains definitions for constants and data structure for stat type
-user.h- contains system command prototypes and functions for c language
+
+1. types.h contains aliases/typedefs for uint, ushort, uchar 
+
+2. stat.h contains definitions for constants and data structure for stat type used for storing data members
+
+3. user.h- contains system command prototypes and functions for c language/ calls available in ulib.c
 
 
 # Part 5 - Implementing a System Call (Extending xv6 further).
