@@ -44,12 +44,13 @@ Processes:
 3. When there is a context switch from one process to another, where are the values of the registers of the old process saved? Contexts are stored at the bottom of the stack they descrobe by the stack pointer which holds the address of the contect. These registers are edi, esi,ebx, ebp,eip
 
 4. What are the 6 possible states of a process?  Also, give a brief phrase describing the purpose of each state.
-	1. Unused
-	2. Embryo
-	3. Sleeping
-	4. Runnable
-	5. Running
-	6. Zombie
+	1. Unused - Process is idle and not being used
+	2. Embryo - The new process is currently being created
+	3. Sleeping - Process is blocked for an I/O
+	4. Runnable - once process is initialized, userinit marks the process as avialable for scheduling by settting the process state as runnable
+	5. Running - process is running?
+	6. Zombie - an exited process remains in the zombie state until its parent calls wait() to find out it exited
+	
 5. What is the function that does a context switch between two processes? swtch
 6. Explain how the context switch function works (Note, this "function" *may* be in an assembly file). The program saves the current registers on the stack, creates a struct context and saves address in old pointer. Switch stacks to new and pop previously saved registers
 
