@@ -5,11 +5,9 @@
 TODO Please edit the following information in your assignment
 
 - Name: John Nguyen
-- How many hours did it take you to complete this assignment?
-- Did you collaborate with any other students/TAs/Professors?
-- Did you use any external resources? (Cite them below)
-  - tbd
-  - tbd
+- How many hours did it take you to complete this assignment? 5
+- Did you collaborate with any other students/TAs/Professors? Durwasa, Ray Trebicka, Ron Sharma
+- Did you use any external resources?
 - (Optional) What was your favorite part of the assignment?
 - (Optional) How would you improve the assignment?
 
@@ -41,18 +39,19 @@ Processes:
 
 1. In which file does the the process table exist? proc.c
 2. What is the struct name of the process table? proc ptable
-3. When there is a context switch from one process to another, where are the values of the registers of the old process saved? Contexts are stored at the bottom of the stack they descrobe by the stack pointer which holds the address of the contect. These registers are edi, esi,ebx, ebp,eip
+3. When there is a context switch from one process to another, where are the values of the registers of the old process saved? Contexts are stored at the bottom of the stack they descrobe by the stack pointer which holds the address of the contect. The old values are stores in  a context struct in proc.c in the data members as registers edi, esi,ebx, ebp,eip
+
 
 4. What are the 6 possible states of a process?  Also, give a brief phrase describing the purpose of each state.
 	1. Unused - Process is idle and not being used
 	2. Embryo - The new process is currently being created
-	3. Sleeping - Process is blocked for an I/O
+	3. Sleeping - Process is blocked for an I/O or another process or waiting for resources that are currently unavialable
 	4. Runnable - once process is initialized, userinit marks the process as avialable for scheduling by settting the process state as runnable
-	5. Running - process is running?
-	6. Zombie - an exited process remains in the zombie state until its parent calls wait() to find out it exited
+	5. Running - process is currently executing
+	6. Zombie -  an exited process remains in the zombie state until its parent calls wait() or exits/knows it exited
 	
 5. What is the function that does a context switch between two processes? swtch
-6. Explain how the context switch function works (Note, this "function" *may* be in an assembly file). The program saves the current registers on the stack, creates a struct context and saves address in old pointer. Switch stacks to new and pop previously saved registers
+6. Explain how the context switch function works (Note, this "function" *may* be in an assembly file). The program saves the current registers on the stack, creates a struct context and saves address in a pointer and then switches stacks to new and pop previously saved registers. More specifically, the kernal maintains a kernal stack for each process and when a context switch occurs, the register values are pushed onto the stack. The program switches stacks to the new process that is going to be run and pops off the register values.
 
 ### Process Startup and running
 
@@ -68,17 +67,18 @@ offset into the file), to the i-node. Note: What I call a "file handle", UNIX xv
 
 1.  The function 'sys_open()' returns a file descriptor 'fd'. To do this, it opens a new file handle 'filealloc()', and it allocates a new file descriptor with 'fdalloc()'. Where is the file descriptor allocated?  
 	- Hint: You will see that the file descriptor is one entry in an array in an important struture you have already looked at.
-	- sysfile.c
+	- It is located in sysfile.c and in the ofile array as a process struct.
 2. What is the algorithm used to choose which entry in the array to use for the new file descriptor?
     	- Note: The name 'NOFILE' means "file number".  "No." is sometimes used as an abbreviation for the word "number".
-	- Scheduling Algorithm
+	- The algorithm iterates over all the processors that are opened by that processand picks the one that is free and does not have any file open and sets the file pointer to that index in the ofile array and designates it as occupied to which processor is free and goes through ofile array and marks process as taken or ocuppied
+
 3.  As you saw above, the file descriptor turned out to be an index in an array.  What is the name of the array for which the file descriptor is an index?  Also, what is the type of one entry in that array.
-	- curproc
+	- The array is named ofile and the type of entry in the array is a struct file
 4.  The type that you saw in the above question is what I was calling a "file handle" (with an offset into the file, etc.). What is the name of the field that holds the offset into the file? We saw it in the function 'sys_open()' (*hint, it's towards the bottom of the function*).
-	- FD_INODE
+	- The field is named off
 5.  The file handle type was initialized to 'FD_INODE' in the sys_open function.  What are the other types that it could have been initialized to (*hint, look for the file struct*)?
-	- T_DIR
-    
+	- Other types are FD_INODE or FD_PIPE 
+	
 # Part 2 - Proc Priority modification
 
 We have spent time in class talking about how we do not have control over how processes threads are scheduled, and the order in which they execute. Sometimes the operating system needs to interrupt for example to perform some task (e.g. a new device is plugged in, some data is ready to be read from disk, etc.). However, a question remains of how are processes and threads actually scheduled. The answer is based on a 'scheduling' algorithm, and we can begin exploring this idea by modifying a structure you saw a few times in Part 1.
