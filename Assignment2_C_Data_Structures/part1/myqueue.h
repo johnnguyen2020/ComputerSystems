@@ -27,6 +27,8 @@ struct queue{
 // do not have to retype 'struct queue' everywhere.
 typedef struct queue queue_t;
 
+void free_queue(queue_t* q); //prototype
+
 // Create a queue
 // Returns a pointer to a newly created queue.
 // The queue should be initialized with data on
@@ -73,9 +75,9 @@ int queue_full(queue_t* q){
 // (i.e. if the queue is full that is an error).
 int queue_enqueue(queue_t *q, int item){
 	if (queue_full(q)==0){                          //if queue is not full
+		q->size = q->size+1;                    //increment size
 		q->back = (q->back +1)%q->capacity;     //then mod math to increment tail
 		q->data[q->back] = item;                //grab data from tail
-		q->size = q->size+1;                    //increment size
 		return 0;
 	}
 	else{	
@@ -96,6 +98,7 @@ int queue_dequeue(queue_t *q){
 		return item;
 	}
 	else{
+        free_queue(q);
 		exit(1); // Note: This line is a filler so the code compiles.
 	}
 }	
@@ -110,7 +113,7 @@ unsigned int queue_size(queue_t* q){
 		return q->size;
 	}
 	else{
-		return 0;
+		exit(1);
 	}
 }
 
@@ -121,10 +124,13 @@ unsigned int queue_size(queue_t* q){
 void free_queue(queue_t* q){
 	if (q != NULL){                //remove queues data until it reaches back index
 		free(q->data);
+        free(q);
+        return;
 	}
+    else{
 		free(q);
+        return;
+    }
 }
-
-
 
 #endif
