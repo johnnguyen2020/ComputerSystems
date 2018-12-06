@@ -35,6 +35,8 @@ typedef struct stack{
 	node_t* head;		// head points to a node on the top of our stack.
 }stack_t;
 
+void free_stack(stack_t* s);
+
 // Creates a stack
 // Returns a pointer to a newly created stack.
 // The stack should be initialized with data on the heap.
@@ -116,9 +118,10 @@ int stack_enqueue(stack_t *s, int item){
 int stack_dequeue(stack_t *s){
 	if (stack_empty(s) == 0 && s->count==1){ //if stack is not empty and there is one element
 		s->count--;                      //decrment by one for removal 
-		node_t* temp = s->head;          //delete the head and use next to make head point to next
+		node_t* tempN = s->head;          //delete the head and use next to make head point to next
+		int item = tempN->data;	
 		free(s->head);
-		int item = temp->data;	
+        s->head = NULL;
 		return item;                     //return data removed
 	} 
 	else if (stack_empty(s) == 0 && s->count>1){ //if not empty and stack is greater than one
@@ -143,6 +146,7 @@ int stack_dequeue(stack_t *s){
 // Queries the current size of a stack
 // A stack that has not been previously created will crash the program.
 // (i.e. A NULL stack cannot return the size)
+
 unsigned int stack_size(stack_t* s){
 	if(s != NULL){                  //if s is created, return number of elements 
 		return s->count;
@@ -156,6 +160,12 @@ unsigned int stack_size(stack_t* s){
 // Removes a stack and ALL of its elements from memory.
 // This should be called before the proram terminates.
 void free_stack(stack_t* s){
+    
+    if (s->head == NULL) {
+        free(s);
+        return;                    
+    }
+
 	node_t* tempNode = s->head;           //create 2 node_t for tracking head and next node       
 	node_t* nextNode = NULL;
 	while(tempNode->next != NULL){               //while head does not point to NULL
@@ -165,8 +175,6 @@ void free_stack(stack_t* s){
 	}
 	free(s);
 }
-
-
 
 
 #endif
