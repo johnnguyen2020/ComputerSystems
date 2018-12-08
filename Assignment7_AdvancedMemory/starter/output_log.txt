@@ -1,0 +1,4021 @@
+running tests ... >> test1_mymalloc
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+
+
+
+running tests ... >> test2_mymalloc
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+malloc 1024 bytes
+1024
+freed 1024 bytes 
+
+
+
+running tests ... >> test3_mymalloc
+malloc 8 bytes
+8
+malloc 16 bytes
+8
+16
+malloc 32 bytes
+8
+16
+32
+malloc 64 bytes
+8
+16
+32
+64
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+malloc 8 bytes
+8
+16
+32
+64
+128
+malloc 16 bytes
+8
+16
+32
+64
+128
+malloc 32 bytes
+8
+16
+32
+64
+128
+malloc 64 bytes
+8
+16
+32
+64
+128
+malloc 128 bytes
+8
+16
+32
+64
+128
+freed 8 bytes 
+freed 16 bytes 
+freed 32 bytes 
+freed 64 bytes 
+freed 128 bytes 
+
+
+
+running tests ... >> test_malloc
+./tests/test_malloc, line 39: ALLOCATE Exhaustive test
+malloc 5 bytes
+5
+malloc 1 bytes
+5
+1
+malloc 1 bytes
+5
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+malloc 1 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+malloc 4 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+4
+freed 5 bytes 
+freed 4 bytes 
+malloc 4 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+4
+./tests/test_malloc, line 53: BEST FIT IMPLEMENTATION 
+0
+./tests/test_malloc, line 58: -- Test malloc() for unusual situations
+./tests/test_malloc, line 60: Allocate small block of 17 bytes 
+malloc 17 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+4
+17
+./tests/test_malloc, line 64: Write on allocated block
+./tests/test_malloc, line 67: Allocate big block of 4711 bytes
+malloc 4711 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+4
+17
+4711
+3457
+./tests/test_malloc, line 71: Write on allocated block
+./tests/test_malloc, line 73: Free big block
+freed 4711 bytes 
+./tests/test_malloc, line 76: Free small block
+freed 17 bytes 
+./tests/test_malloc, line 79: Allocate zero
+./tests/test_malloc, line 83: Free pointer from malloc(0)
+./tests/test_malloc, line 86: Test alignment for double
+malloc 16 bytes
+5
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+4
+16
+18446744073709551593
+4711
+3457
+freed 16 bytes 
+Total time = 0.000077 seconds
+
+
+
+running tests ... >> static_array_insertion
+./tests/static_array_insertion, line 14: Allocate and Assert
+malloc 1600 bytes
+1600
+./tests/static_array_insertion, line 24: ALLOCATE SUCCESS! 
+./tests/static_array_insertion, line 25: ALLOCATE SUCCESS! 
+./tests/static_array_insertion, line 26: ALLOCATE SUCCESS! 
+./tests/static_array_insertion, line 27: ALLOCATE SUCCESS! 
+./tests/static_array_insertion, line 28: ALLOCATE SUCCESS! 
+./tests/static_array_insertion, line 29: ALLOCATE SUCCESS! 
+freed 1600 bytes 
+Total time = 0.000050 seconds
+
+
+
+running tests ... >> binary_tree_test
+./tests/binary_tree_test, line 29: Allocate Binary Tree
+malloc 24 bytes
+24
+malloc 24 bytes
+24
+24
+malloc 24 bytes
+24
+24
+24
+malloc 24 bytes
+24
+24
+24
+24
+./tests/binary_tree_test, line 36: ALLOCATE SUCCESS! 
+Total time = 0.000053 seconds
+
+
+
+running tests ... >> test_null
+./tests/test_null, line 15: Allocate zero
+./tests/test_null, line 18: Free pointer from malloc(0)
+Total time = 0.000043 seconds
+
+
+
